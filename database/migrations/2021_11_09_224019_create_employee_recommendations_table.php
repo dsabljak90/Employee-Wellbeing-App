@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRecommendationsForEmployeeTable extends Migration
+class CreateEmployeeRecommendationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateRecommendationsForEmployeeTable extends Migration
      */
     public function up()
     {
-        Schema::create('recommendations_for_employee', function (Blueprint $table) {
+        Schema::create('employee_recommendations', function (Blueprint $table) {
             $table->id();
-            $table->text('recommendation_text');
+            $table->text('text'); // You are about to burnout. You should have better work life balance and sleep more. 
+            $table->double('lower_limit'); 
+            $table->double('upper_limit');
             $table->timestamps();
         });
     }

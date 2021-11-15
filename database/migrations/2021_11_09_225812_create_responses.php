@@ -15,12 +15,16 @@ class CreateResponses extends Migration
     {
         Schema::create('responses', function (Blueprint $table) {
             $table->id();
-            $table->integer('queston_id');
-            $table->integer('testing_id');
-            $table->integer('results');
+            $table->foreignId('user_id');
+            $table->foreignId('question_id');
+            $table->foreignId('testing_id');
+            $table->integer('answer');
             $table->timestamps();
-            });
-        }
+
+            $table->unique(['user_id', 'question_id', 'testing_id']);
+            
+        });
+    }
     /**
      * Reverse the migrations.
      *
