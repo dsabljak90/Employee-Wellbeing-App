@@ -4,17 +4,27 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\User;
+use App\Models\Testing;
+use App\Models\Question; 
 
-class ResponseModel extends Model
+class Response extends Model
 {
     use HasFactory;
-    public function recommendation_for_employees(){
-    return $this->belongsTo('App\Models\RecommendationForEmployees');
-}
-    public function recommendation_for_managers() {
-        return $this->belongsTo('App\Models\RecommendationForManagers');
+
+    public function question() 
+    {
+        return $this->belongsTo('App\Models\Question');
     }
-    public function questionaire() {
-        return $this->belongsTo('App\Models\Questionaire');
+    
+    public function user() 
+    {
+        return $this->belongsTo('App\Models\User');
     }
+
+    public function testing() 
+    {
+        return $this->belongsTo('App\Models\Testing');
+    }
+
 }

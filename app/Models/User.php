@@ -7,22 +7,26 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use App\Models\Testing; 
+
+use App\Models\Response;
+use App\Models\Question;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
-public function questionaire(){
-    return $this->belongsTo('App\Models\Questionaire');
+public function questions(){
+    return $this->belongsToMany('App\Models\Question', 'responses');
 }
   public function testing() {
-        return $this->hasMany('App\Models\Testing');
+        return $this->belongsToMany('App\Models\Testing', 'responses');
     }  
-    public function recommendation_for_managers() {
-        return $this->belongsTo('App\Models\RecommendationForManagers');
+   
+   
+    public function responses() {
+        return $this->hasMany('App\Models\Response');
     }
-    public function recommendation_for_employees() {
-        return $this->belongsTo('App\Models\RecommendationForEmployees');
-    }
+ 
      /**
      * The attributes that are mass assignable.
      *

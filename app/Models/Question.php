@@ -6,16 +6,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Response;
-class Testing extends Model
+class Question extends Model
 {
     use HasFactory;
 
-    public function users() 
+    public function users()
     {
         return $this->belongsToMany('App\Models\User', 'responses');
     }
 
-    public function responses()
+    public function responses() 
     {
         return $this->hasMany('App\Models\Response');
     }
