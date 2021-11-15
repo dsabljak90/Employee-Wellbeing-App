@@ -15,8 +15,8 @@ class CreateTestingsTable extends Migration
     {
         Schema::create('testings', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('date_from');
-            $table->timestamp('date_until');
+            $table->date('date_from');
+            $table->date('date_until');
             //$table->double('responses');  //  average response from all users in all questions
                                           // 3.67
             $table->timestamps();
