@@ -1,1 +1,123 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.header-firstpart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.small-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20rem;
+  width: 80%;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.links > a {
+  color: #D3D0CB;
+  text-decoration: none;
+  padding: 1rem 3rem 1rem 1rem;
+}
+
+.big-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 10rem;
+}
+
+.header-login {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  width: 20%;
+}
+
+.header-login > a {
+  color: #D3D0CB;
+  text-decoration: none;
+}
+
+.test-button {
+  width: 8rem;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #9fb1bcff;
+  color: #2E5255;
+}
+
+.big-picture > img {
+  height: 35rem;
+  width: 100%;
+}
+
+.short-line {
+  width: 20rem;
+  background-color: #D3D0CB;
+  height: 0.1rem;
+  margin-top: 1.5rem;
+}
+
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 5rem;
+}
+
+.about-us-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  height: 100%;
+}
+
+.up-line {
+  height: 100%;
+  width: 1.1rem;
+  margin: 1rem;
+  background-color: #D3D0CB;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-background {
+  height: 100%;
+  width: 100%;
+  background-color: #2E5255;
+  color: #D3D0CB;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/*# sourceMappingURL=app.css.map*/

@@ -1,0 +1,16 @@
+@import "colors.scss";
+@import "pages/header.scss";
+@import "pages/about-us.scss";
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main-background {
+    height: 100%;
+    width: 100%;
+    background-color: $background-color;
+    color: $font-color;
+    font-family: "Courier New", Courier, monospace;
+}
