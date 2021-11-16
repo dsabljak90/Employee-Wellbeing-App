@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateRecommendationsForManagers extends Migration
+class CreateTestingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreateRecommendationsForManagers extends Migration
      */
     public function up()
     {
-        Schema::create('recommendations_for_managers', function (Blueprint $table) {
+        Schema::create('testings', function (Blueprint $table) {
             $table->id();
-            $table->text('recommendation'); 
+            $table->date('date_from');
+            $table->date('date_until');
+            //$table->double('responses');  //  average response from all users in all questions
+                                          // 3.67
             $table->timestamps();
-           });
+        });
     }
 
     /**
@@ -27,6 +30,6 @@ class CreateRecommendationsForManagers extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('recommendations_for_managers');
+        Schema::dropIfExists('testing');
     }
 }

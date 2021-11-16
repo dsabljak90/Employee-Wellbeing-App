@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateOverallData extends Migration
+class CreateManagerRecommendationsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,12 @@ class CreateOverallData extends Migration
      */
     public function up()
     {
-        Schema::create('overall_data', function (Blueprint $table) {
+        Schema::create('manager_recommendations', function (Blueprint $table) {
             $table->id();
-            $table->overall_results();
-            $table->timestamps();
+            $table->text('text'); 
+            $table->double('lower_limit'); 
+            $table->double('upper_limit');  
+            $table->timestamps(); 
         });
     }
 
@@ -27,6 +29,6 @@ class CreateOverallData extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('overall_data');
+        Schema::dropIfExists('recommendations_for_managers');
     }
 }
