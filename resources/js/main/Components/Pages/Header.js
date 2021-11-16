@@ -3,6 +3,7 @@ export default function Header() {
         <>
             <header className="header">
                 <div className="header-firstpart">
+                    <div className="network"></div>
                     <div className="small-title">
                         <h2>Small title above</h2>
                         <div className="links">

@@ -13,13 +13,21 @@
     height: 100%;
     width: 100%;
 }
+.network {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 20%;
+}
 .small-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 20rem;
-    width: 80%;
+    width: 60%;
 }
 .links {
     list-style: none;

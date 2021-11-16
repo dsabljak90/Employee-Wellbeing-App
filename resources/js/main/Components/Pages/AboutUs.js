@@ -3,6 +3,7 @@ export default function AboutUs() {
         <>
             <section className="about-us">
                 <h1>About Us</h1>
+                <div className="short-line"></div>
                 <div className="about-us-text">
                     <p>
                         Lorem ipsum dolor sit amet, consectetuer adipiscing
