@@ -1,0 +1,45 @@
+@import "../colors.scss";
+
+.blog {
+    width: 80%;
+    padding: 5rem;
+}
+
+.blog-container {
+    margin-top: 5rem;
+    width: 100%;
+    display: grid;
+    grid-template-areas: "blog blog-1 blog-2 blog-3";
+    height: 25rem;
+}
+.blog-articles {
+    grid-area: blog;
+}
+.blog-articles-1 {
+    grid-area: blog-1;
+}
+.blog-articles-2 {
+    grid-area: blog-2;
+}
+.blog-articles-3 {
+    grid-area: blog-3;
+}
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.article img {
+    margin-bottom: 2rem;
+    width: 15rem;
+    height: 15rem;
+}
+.long-line {
+    width: 90%;
+    background-color: $font-color;
+    height: 1px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
