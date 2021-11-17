@@ -8,13 +8,13 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 use App\Models\Testing; 
-
+use Spatie\Permission\Traits\HasRoles;
 use App\Models\Response;
 use App\Models\Question;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, HasRoles;
 public function questions(){
     return $this->belongsToMany('App\Models\Question', 'responses');
 }
@@ -33,7 +33,7 @@ public function questions(){
      * @var string[]
      */
     protected $fillable = [
-        'name',
+        'fullname',
         'email',
         'password',
     ];
@@ -56,4 +56,5 @@ public function questions(){
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+    
 }
