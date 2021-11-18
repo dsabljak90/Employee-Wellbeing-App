@@ -3,7 +3,7 @@
 @section('content')
 <div id='app'></div>
 <script src="{{ mix('js/main.js') }}"></script>
-<h1>Works</h2>
+
 
 
 @endsection

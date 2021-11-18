@@ -1,0 +1,32 @@
+.about-us {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    height: 30rem;
+}
+
+.about-us-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    height: 100%;
+}
+
+.up-line {
+    height: 50%;
+    width: 1.1rem;
+    margin: 1rem;
+    background-color: $font-color;
+}
+.short-line {
+    width: 20rem;
+    background-color: $font-color;
+    height: 1px;
+    margin-top: 1.5rem;
+}
