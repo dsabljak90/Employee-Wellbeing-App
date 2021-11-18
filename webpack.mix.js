@@ -23,7 +23,7 @@ if (!mix.inProduction()) {
 
 // ADD YOUR COMPILED ASSETS HERE
 mix.sass("resources/css/app.scss", "public/css");
-// mix.js('resources/js/app.js', 'public/js').react(); // example React app compilation
+mix.js("resources/js/main/index.js", "public/js/main.js").react();
 
 mix.browserSync({
     host: "localhost",
