@@ -13,6 +13,7 @@ class TestController extends Controller
     }
     public function store(Request $request)
 {
- $answer = $request->input('answer');
+ redirect('/');
 }
+
 }
