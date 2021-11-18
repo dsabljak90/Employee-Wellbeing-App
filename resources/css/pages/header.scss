@@ -1,0 +1,95 @@
+@import "../colors.scss";
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.header-firstpart {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.network {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 25%;
+}
+.small-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20rem;
+    width: 50%;
+}
+.links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.links > a {
+    color: $font-color;
+    text-decoration: none;
+    padding: 1rem 3rem 1rem 1rem;
+}
+.big-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    height: 10rem;
+}
+.header-login {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 15%;
+}
+.header-login > a {
+    color: $font-color;
+    text-decoration: none;
+}
+
+.test-button {
+    width: 8rem;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #9fb1bcff;
+    color: $background-color;
+}
+.test-button:hover {
+    width: 10rem;
+    height: 4.5rem;
+    opacity: 0.5;
+}
+.big-picture {
+    width: 100%;
+}
+.big-picture > img {
+    height: 35rem;
+    width: 100%;
+}
+
+.short-line {
+    width: 100%;
+    background-color: $font-color;
+    height: 1px;
+    margin-top: 1.5rem;
+}

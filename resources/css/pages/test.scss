@@ -1,0 +1,86 @@
+@import "../colors.scss";
+.test {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    height: 40rem;
+    width: 80%;
+}
+.test-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 3rem;
+}
+
+.test-text p {
+    padding: 1rem;
+}
+.test-text a {
+    text-decoration: none;
+    color: $background-color;
+    font-size: larger;
+}
+
+.reg-button {
+    margin-top: 3rem;
+    height: 7rem;
+    width: 12rem;
+    background-color: #9fb1bcff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.reg-button:hover {
+    width: 15rem;
+    height: 10rem;
+    opacity: 0.5;
+}
+.test-buttons {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.test-buttons a {
+    text-decoration: none;
+    color: $background-color;
+    font-size: 2rem;
+}
+.reg-button_test {
+    width: 25rem;
+    height: 15rem;
+}
+
+.reg-button_test:hover {
+    width: 25rem;
+    height: 15rem;
+    background-image: url("/img/test.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    font-size: 5rem;
+    font-style: bold;
+}
+.reg-button_result {
+    width: 25rem;
+    height: 15rem;
+}
+.reg-button_result:hover {
+    width: 25rem;
+    height: 15rem;
+    background-image: url("/img/results.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    opacity: 0.7;
+    font-size: 5rem;
+    font-style: bold;
+    color: white;
+}
