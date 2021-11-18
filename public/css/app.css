@@ -40,7 +40,7 @@
 }
 
 .links > a {
-  color: #D3D0CB;
+  color: #d3d0cb;
   text-decoration: none;
   padding: 1rem 3rem 1rem 1rem;
 }
@@ -64,7 +64,7 @@
 }
 
 .header-login > a {
-  color: #D3D0CB;
+  color: #d3d0cb;
   text-decoration: none;
 }
 
@@ -76,7 +76,7 @@
   justify-content: center;
   text-decoration: none;
   background-color: #9fb1bcff;
-  color: #2E5255;
+  color: #2e525b;
 }
 
 .test-button:hover {
@@ -96,7 +96,7 @@
 
 .short-line {
   width: 100%;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
 }
@@ -125,12 +125,12 @@
   height: 50%;
   width: 1.1rem;
   margin: 1rem;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
 }
 
 .short-line {
   width: 20rem;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
 }
@@ -177,7 +177,7 @@
 
 .long-line {
   width: 90%;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -227,7 +227,7 @@
 
 .long-line {
   width: 90%;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -257,7 +257,7 @@
 
 .test-text a {
   text-decoration: none;
-  color: #2E5255;
+  color: #2e525b;
   font-size: larger;
 }
 
@@ -287,7 +287,7 @@
 
 .test-buttons a {
   text-decoration: none;
-  color: #2E5255;
+  color: #2e525b;
   font-size: 2rem;
 }
 
@@ -333,12 +333,12 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
 }
 
 .contact {
   margin-right: 5rem;
-  color: #2E5255;
+  color: #2e525b;
 }
 
 * {
@@ -352,8 +352,8 @@ footer {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: #2E5255;
-  color: #D3D0CB;
+  background-color: #2e525b;
+  color: #d3d0cb;
   font-family: "Courier New", Courier, monospace;
 }
 
