@@ -11,4 +11,8 @@ class TestController extends Controller
         $questions = json_decode(file_get_contents(storage_path('questions.json')));
         return view('test/test', ["questions"=>$questions]);
     }
+    public function store(Request $request)
+{
+ $answer = $request->input('answer');
+}
 }
