@@ -23,3 +23,5 @@ Route::get('/test', 'TestController@index');
 Route::get('/recommendations', 'RecommendationsController@index');
 Route::get('/statistics', 'StatisticsController@index');
 Route::post('/test', 'TestController@store');
+
+Route::get('/response/{id}', 'ResponseController@total_response'); 

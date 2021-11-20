@@ -1,4 +1,6 @@
+@extends('layouts.user-main')
 
+@section('user-content')
 <div>
     <p> Hello from Test Blade </p>
     <form action="/test" method="POST">
@@ -27,3 +29,6 @@
 <input type="submit" value="Submit">
 </form>
 </div>
+
+
+@endsection
