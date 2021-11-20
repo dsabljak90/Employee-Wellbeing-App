@@ -7,34 +7,49 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
-<body>
-<header>
-    <div class="title-user-part">
-<h1>Test</h1>
-<h3>User</h3>
-</div>
-<div>
-<ul>
-<a href="">
-    <li>Test</li>
-</a>
-<a href="">
-    <li>Recommendation</li>
-</a>
-<a href="">
-    <li>Statistic</li>
-</a>
-<a href="">
-    <li>Logout</li>
-</a>
-</ul>
+<body  >
+    <section class ="user-background">
+        <header>
+            <div class="title-user-part">
+                <h1>Test Area Title</h1>
+                <h3>User</h3>
+            </div>
+            <div class="user-nav-bar">
+                <ul>
+                <a href="">
+                    <li>Test</li>
+                </a>
+                <a href="">
+                    <li>Recommendation</li>
+                </a>
+                <a href="">
+                    <li>Statistic</li>
+                </a>
+                <a href="">
+                    <li>Logout</li>
+                </a>
+                </ul>
 
-</div>
+            </div>
 
 
 
-</header>
-@yield('user-content')
+        </header>
+            @yield('user-content')
+
+
+        <footer class="user-footer">
+            <h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nostrum nulla veritatis temporibus, modi incidunt eum neque impedit excepturi ullam sequi iure explicabo maiores consectetur earum dolorem voluptatum dignissimos! Cumque?
+            </h4>
+
+        </footer>
+
+
+
+    </section>
+
+
 
 </body>
 </html>

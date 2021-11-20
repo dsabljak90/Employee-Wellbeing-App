@@ -1,4 +1,49 @@
-@import "../colors.scss";
-.title-user-part {
-    color: green;
+.user-test {
+    background-color: $user-content-color;
+
+    .user-test-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+
+        h2 {
+            padding-bottom: 1rem;
+        }
+    }
+
+    .user-test-form {
+        padding-left: 3rem;
+        p {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .user-submit-button {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            margin-right: 3rem;
+            flex-direction: row;
+            :hover {
+                background-color: $user-hover-color;
+            }
+            .submit-button {
+                margin-top: 2rem;
+                margin-bottom: 3rem;
+                border: none;
+                width: 7rem;
+                height: 4rem;
+                background-color: $user-links-color;
+                :hover {
+                    background-color: $user-hover-color;
+                    width: 8rem; /* doesn't work check why  */
+                }
+            }
+        }
+    }
 }
