@@ -368,11 +368,29 @@ footer {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 15vh;
+  height: 25vh;
 }
-.user-background .title-user-part h3 {
+.user-background .title-user-part h3,
+.user-background .title-user-part form {
   justify-content: flex-end;
+  flex-direction: row;
   margin-left: 70%;
+  height: 4vh;
+}
+.user-background .title-user-part h3 :hover,
+.user-background .title-user-part form :hover {
+  background-color: #ffcb9a;
+}
+.user-background .title-user-part h3 button,
+.user-background .title-user-part form button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  width: 6rem;
+  height: 3rem;
+  background-color: #d9b08c;
+  color: #116466;
+  font-size: 1.1rem;
 }
 .user-background .user-nav-bar {
   display: flex;
@@ -385,8 +403,8 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 80%;
+  justify-content: space-evenly;
+  width: 65%;
 }
 .user-background .user-nav-bar ul a {
   text-decoration: none;
@@ -492,6 +510,9 @@ footer {
   justify-content: center;
   height: 10rem;
 }
+.user-login .user-login-button :hover {
+  background-color: #ffcb9a;
+}
 .user-login .user-login-button button {
   width: 7rem;
   height: 5rem;
@@ -499,6 +520,81 @@ footer {
   background-color: #d9b08c;
   border: none;
   color: #116466;
+}
+
+/* Main page colors */
+/* Blade section  colors*/
+.user-register {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #116466;
+  height: 30rem;
+  width: 100%;
+}
+.user-register input {
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+.user-register .user-register-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.user-register .user-register-button :hover {
+  background-color: #ffcb9a;
+}
+.user-register .user-register-button button {
+  width: 8rem;
+  height: 5rem;
+  font-size: 1.3rem;
+  background-color: #d9b08c;
+  border: none;
+  color: #116466;
+}
+
+/* Main page colors */
+/* Blade section  colors*/
+.statistics {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #116466;
+  height: 30rem;
+}
+.statistics form label {
+  font-size: 1.2rem;
+}
+.statistics form select {
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+.statistics form input {
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+
+/* Main page colors */
+/* Blade section  colors*/
+.user-recommendations-container {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #116466;
+  height: 30rem;
 }
 
 * {

@@ -11,8 +11,25 @@
     <section class ="user-background">
         <header>
             <div class="title-user-part">
+              
+                <!-- @if(isset($user_name)&& $user_id ===2)
+                <a href="/test"><h2>{{ $user_name }}</h2></a>
+                // In this way we can check the user and make a link on him 
+                @endif -->
+
+    
+             
                 <h1>Test Area Title</h1>
-                <h3>User</h3>
+
+
+                @if(isset($user_name))
+                                <h3>User: {{ $user_name }}</h3>
+                                <form action="{{ route('logout') }}" method="post">
+                    @csrf
+                    <button>Logout</button>
+                </form>
+                                @endif
+                                
             </div>
             <div class="user-nav-bar">
                 <ul>
@@ -25,9 +42,7 @@
                 <a href="">
                     <li>Statistic</li>
                 </a>
-                <a href="">
-                    <li>Logout</li>
-                </a>
+               
                 </ul>
 
             </div>

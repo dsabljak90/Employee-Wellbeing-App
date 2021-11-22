@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Response;
 use App\Models\Testing;
+use App\Models\EmployeeRecommendation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -13,13 +14,17 @@ class ResponseController extends Controller
 
 
     public function total_response(Request $response){
+
+        if(Auth::user()){
+        
+            $user_name = Auth::user()->fullname;
+            $user_id = Auth::user()->id;
    
         $user = Auth::user()->id; // This reds user id from Responses table. User is posible ti auticatre with Auth::user()
+       
     
         $testing = request('testing');
-        echo 'input testing ';
-        echo $testing;
-        echo 'input testing ';
+        
         //Testing::  where('id', 'like', '%' . $searchString . '%')->get();
         //Testing::findOrFail($id)->id; // This reeds testing_id from Responses table.
         $response= Response::all();
@@ -30,15 +35,35 @@ class ResponseController extends Controller
         foreach( $response as $response){
             if($response->user_id == $user && $response->testing_id == $testing){
             $sum +=$response->answer;}
-            echo $response->testing_id;
+        
         };
-        echo $sum/7;
-        $score = $sum /6; 
-        echo 'user';
+       
+        $score = $sum /7; 
+        
+        $recommendation = EmployeeRecommendation::all();
+   
+if($score){
+        foreach($recommendation as $recomend){
+          
+          
+          if($recomend->lower_limit <= $score && $recomend->upper_limit >= $score){
+            $user_recommendation = $recomend->text;
+
+           
+          }
+          
+        
+
+        }
+        return view('/statistics/statistics', compact('user_name', 'user_id','testing', 'user_recommendation' )); 
+    
+    }
+     
+
+
        //The all questions mut be fulfill. It they are not, that data dont go in db.
-        echo 'testing';
-        echo  $testing;
-        return view('/statistics/statistics', compact('user', 'testing', 'score' )); 
+       
+        return view('/statistics/statistics', compact('user_name', 'user_id','testing' )); 
 
     }
-}}
+}}}

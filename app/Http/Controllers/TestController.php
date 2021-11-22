@@ -11,9 +11,14 @@ class TestController extends Controller
     public function index()
     {
         // $questions = json_decode(file_get_contents(storage_path('questions.json')));
+        if(Auth::user()){
+        
+            $user_name = Auth::user()->fullname;
+            $user_id = Auth::user()->id;
+
         $questions = Question::all();
-        return view('test/test', ["questions"=>$questions]);
-    }
+        return view('test/test', compact('questions', 'user_name', 'user_id'));
+    }}
     public function store(Request $request) {
         // do this as many times as you have questions
         // common for all questions/responses in one submit 

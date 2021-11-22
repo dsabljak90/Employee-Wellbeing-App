@@ -5,7 +5,7 @@
     <div class="user-test-info">
             <h2> Test </h2>
 
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam iusto maiores ab consequatur ratione.</p>
+            <p>We have to make here decision about testing witch is happening and how to always submit all 7 answers</p>
 
             </div>
     <div class="user-test-form">
@@ -33,9 +33,13 @@
         <input type="radio" name="{{"answers[".$question->id."]"}}" value="0">
 
         @endforeach 
+
+       
     <div class="user-submit-button">
         <input class="submit-button" type="submit" value="Submit">
 </div>    
+
+
     </form>
         </div>
 </section>
