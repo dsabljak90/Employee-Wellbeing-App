@@ -19,7 +19,7 @@ class TestController extends Controller
         // common for all questions/responses in one submit 
         foreach ($request->input('answers') as $question_id => $answer){
         $response = new Response();
-        $response->testing_id = 2;
+        $response->testing_id = 3;
         $response->user_id = Auth::user()->id;
         
         // specific for each question/answer
@@ -39,7 +39,7 @@ return $request->all();
  public function update(Request $request) {
     foreach ($request->input('answers') as $question_id => $answer){
         $response = new Response();
-        $response->test_id = 1;
+        $response->test_id = 3;
         $response->user_id = "??";
         
         // specific for each question/answer

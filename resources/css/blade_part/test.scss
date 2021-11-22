@@ -29,6 +29,7 @@
             justify-content: flex-end;
             margin-right: 3rem;
             flex-direction: row;
+            color: $user-links-font-color;
             :hover {
                 background-color: $user-hover-color;
             }
@@ -39,6 +40,7 @@
                 width: 7rem;
                 height: 4rem;
                 background-color: $user-links-color;
+                color: $user-links-font-color;
                 :hover {
                     background-color: $user-hover-color;
                     width: 8rem; /* doesn't work check why  */

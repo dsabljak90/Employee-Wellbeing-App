@@ -1,0 +1,32 @@
+.user-login {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: $user-content-color;
+    height: 30rem;
+
+    input {
+        height: 3rem;
+        width: 15rem;
+        font-size: 1.3rem;
+        color: $user-content-color;
+    }
+
+    .user-login-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+
+        button {
+            width: 7rem;
+            height: 5rem;
+            font-size: 1.3rem;
+            background-color: $user-links-color;
+            border: none;
+            color: $user-links-font-color;
+        }
+    }
+}

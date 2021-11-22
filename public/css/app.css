@@ -409,6 +409,8 @@ footer {
   justify-content: center;
   height: 4rem;
   margin-bottom: 2rem;
+  color: #116466;
+  font-size: 1.1rem;
 }
 .user-background .user-footer {
   background-color: #2c3531;
@@ -449,6 +451,7 @@ footer {
   justify-content: flex-end;
   margin-right: 3rem;
   flex-direction: row;
+  color: #116466;
 }
 .user-test .user-test-form .user-submit-button :hover {
   background-color: #ffcb9a;
@@ -460,11 +463,42 @@ footer {
   width: 7rem;
   height: 4rem;
   background-color: #d9b08c;
+  color: #116466;
 }
 .user-test .user-test-form .user-submit-button .submit-button :hover {
   background-color: #ffcb9a;
   width: 8rem;
   /* doesn't work check why  */
+}
+
+.user-login {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #116466;
+  height: 30rem;
+}
+.user-login input {
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+.user-login .user-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.user-login .user-login-button button {
+  width: 7rem;
+  height: 5rem;
+  font-size: 1.3rem;
+  background-color: #d9b08c;
+  border: none;
+  color: #116466;
 }
 
 * {
