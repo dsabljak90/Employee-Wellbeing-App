@@ -25,20 +25,24 @@ Route::get('/', 'MainpageController@index');
 Route::get('/layouts/user-main', 'MainpageController@indexUser');
 
 Route::get('/home', 'HomeController@index')->middleware('auth')->name('home');
-Route::get('/test', 'TestController@index');
+
 
 
 Route::get('/recommendations', 'RecommendationsController@index');
 //Route::get('/statistics', 'StatisticsController@index');
-Route::post('/test', 'TestController@store');
 //email
 Route::get('/email', 'EmailController@send');
 Route::post('/email', 'EmailController@send');
 //enrollment notifications
 Route::get('/send-enrollment', [EnrollmentController::class, 'sendEnrollmentNotification']);
-Route::get('/recommendations/{param?}', 'RecommendationsController@reactApp')->where('param', '.*')->name('recommendations');
+//Route::get('/recommendations/{param?}', 'RecommendationsController@reactApp')->where('param', '.*')->name('recommendations');
 // Route::get('/recommendations', 'RecommendationsController@index');
-Route::post('/test', 'TestController@store');
+
+Route::get('/test/{id?}', 'TestController@index');
+Route::post('/test/{id}', 'TestController@store');
+
+Route::post('/test/{id}/assign', 'TestController@assignTest');
+
 Route::get('/statistics/{param?}', 'StatisticsController@reactApp')->where('param', '.*')->name('statistics');
 Route::get('/info', 'InfoController@index');
 
