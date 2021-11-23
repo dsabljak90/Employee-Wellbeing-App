@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use  Illuminate\Http\Request;  
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,12 +14,16 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
+    
+    
     return view('welcome');
 });
 Route::get('/', 'MainpageController@index');
 
 Route::get('/home', 'HomeController@index')->middleware('auth')->name('home');
 Route::get('/test', 'TestController@index');
-Route::get('/recommendations', 'RecommendationsController@index');
-Route::get('/statistics', 'StatisticsController@index');
+Route::get('/recommendations/{param?}', 'RecommendationsController@reactApp')->where('param', '.*')->name('recommendations');
+//Route::get('/recommendations', 'RecommendationsController@index');
 Route::post('/test', 'TestController@store');
+Route::get('/statistics/{param?}', 'StatisticsController@reactApp')->where('param', '.*')->name('statistics');
+Route::get('/info', 'InfoController@index');
