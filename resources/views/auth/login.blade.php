@@ -12,9 +12,11 @@
     <input type="password" name="password" value="" placeholder="Insert password here">
  <div class="user-login-button">
     <button id="user-login-button">Login</button>
+    <a href="/register">/or Register</a>
     </div>
   
 </form>
+
 
 
 @endguest

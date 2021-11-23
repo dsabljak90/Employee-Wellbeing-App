@@ -513,6 +513,21 @@ footer {
 .user-login .user-login-button :hover {
   background-color: #ffcb9a;
 }
+.user-login .user-login-button a {
+  width: 8rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  background-color: #d9b08c;
+  border: none;
+  color: #116466;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 1rem;
+}
 .user-login .user-login-button button {
   width: 7rem;
   height: 5rem;

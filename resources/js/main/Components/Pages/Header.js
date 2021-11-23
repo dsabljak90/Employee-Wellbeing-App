@@ -7,8 +7,8 @@ export default function Header() {
                     <div className="small-title">
                         <h2>Small title above</h2>
                         <div className="links">
-                            <a href="">
-                                <li>Link </li>
+                            <a href="#about-us">
+                                <li>About Us</li>
                             </a>
                             <a href="">
                                 <li>Link </li>
@@ -31,8 +31,10 @@ export default function Header() {
                     </div>
 
                     <div className="header-login">
-                        <a href="">Login</a>
-                        <div className="test-button">Test/Results</div>
+                        <a href="/login">Login</a>
+                        <a href="/login">
+                            <div className="test-button">Test/Results</div>
+                        </a>
                     </div>
                 </div>
             </header>

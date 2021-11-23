@@ -23,6 +23,21 @@
             background-color: $user-hover-color;
         }
 
+        a {
+            width: 8rem;
+            height: 5rem;
+            font-size: 1.4rem;
+            background-color: $user-links-color;
+            border: none;
+            color: $user-links-font-color;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            text-align: center;
+            margin-left: 1rem;
+        }
         button {
             width: 7rem;
             height: 5rem;

@@ -19,10 +19,10 @@
 @endif  this render user to the main page. -->
     
 <body>
-<form action="{{ route('logout') }}" method="post">
+<!-- <form action="{{ route('logout') }}" method="post">
     @csrf
     <button>Logout</button>
-</form>
+</form> -->
 @yield('content')
 
 

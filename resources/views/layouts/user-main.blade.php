@@ -33,13 +33,13 @@
             </div>
             <div class="user-nav-bar">
                 <ul>
-                <a href="">
+                <a href="/test">
                     <li>Test</li>
                 </a>
-                <a href="">
+                <a href="/recommendations">
                     <li>Recommendation</li>
                 </a>
-                <a href="">
+                <a href="/statistics/statistics">
                     <li>Statistic</li>
                 </a>
                
