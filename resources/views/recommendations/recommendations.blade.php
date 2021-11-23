@@ -1,8 +1,6 @@
-<<<<<<< HEAD
 <div>
     <p> Hello from Recommendations Blade. </p>
 </div>
-=======
 @extends('layouts.user-main')
 
 @section('user-content')
@@ -28,4 +26,3 @@
 
 
 @endsection
->>>>>>> responses
