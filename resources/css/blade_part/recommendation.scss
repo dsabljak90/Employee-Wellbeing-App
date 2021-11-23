@@ -1,0 +1,10 @@
+@import "../colors.scss";
+.user-recommendations-container {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: $user-content-color;
+    height: 30rem;
+}
