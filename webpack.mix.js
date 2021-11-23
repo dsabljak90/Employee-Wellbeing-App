@@ -29,7 +29,7 @@ mix.js(
     "resources/js/Recommendations/index.js",
     "public/js/recommendations.js"
 ).react();
-mix.js("resources/js/Info/index.js", "public/js/info.js").react();
+// mix.js("resources/js/Info/index.js", "public/js/info.js").react();
 mix.browserSync({
     host: "localhost",
     port: 3000,

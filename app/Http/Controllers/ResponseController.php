@@ -7,18 +7,14 @@ use App\Models\EmployeeRecommendation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-class RecommendationsController extends Controller
+class ResponseController extends Controller
 {
-       public function reactApp()
-    {
-        return view('recommendations.react-app');
-    }
-    public function answers(Request $request){
-        return $request->input();
-}
- 
-   
-public function index() {
+
+
+
+
+    public function total_response(Request $response){
+
         if(Auth::user()){
         
             $user_name = Auth::user()->fullname;
@@ -42,10 +38,11 @@ public function index() {
         
         };
        
-        $score = 1.4; // This I was hardcoded, this should go automaticly, based on taken tent. 
+        $score = $sum /7; 
+        
         $recommendation = EmployeeRecommendation::all();
    
-
+if($score){
         foreach($recommendation as $recomend){
           
           
@@ -58,14 +55,15 @@ public function index() {
         
 
         }
+        return view('/statistics/statistics', compact('user_name', 'user_id','testing', 'user_recommendation' )); 
+    
+    }
      
-        
+
+
        //The all questions mut be fulfill. It they are not, that data dont go in db.
        
-        return view('/recommendations/recommendations', compact('user_name', 'user_id','testing', 'user_recommendation')); 
+        return view('/statistics/statistics', compact('user_name', 'user_id','testing' )); 
 
     }
-}}
-
-
-}
+}}}
