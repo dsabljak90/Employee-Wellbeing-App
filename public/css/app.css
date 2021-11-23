@@ -1,3 +1,7 @@
+/* Main page colors */
+/* Blade section  colors*/
+/* Main page colors */
+/* Blade section  colors*/
 .header {
   display: flex;
   flex-direction: column;
@@ -40,7 +44,7 @@
 }
 
 .links > a {
-  color: #D3D0CB;
+  color: #d3d0cb;
   text-decoration: none;
   padding: 1rem 3rem 1rem 1rem;
 }
@@ -64,7 +68,7 @@
 }
 
 .header-login > a {
-  color: #D3D0CB;
+  color: #d3d0cb;
   text-decoration: none;
 }
 
@@ -76,7 +80,7 @@
   justify-content: center;
   text-decoration: none;
   background-color: #9fb1bcff;
-  color: #2E5255;
+  color: #2e5255;
 }
 
 .test-button:hover {
@@ -96,7 +100,7 @@
 
 .short-line {
   width: 100%;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
 }
@@ -125,16 +129,18 @@
   height: 50%;
   width: 1.1rem;
   margin: 1rem;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
 }
 
 .short-line {
   width: 20rem;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
 }
 
+/* Main page colors */
+/* Blade section  colors*/
 .advices {
   display: flex;
   flex-direction: row;
@@ -177,12 +183,14 @@
 
 .long-line {
   width: 90%;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
+/* Main page colors */
+/* Blade section  colors*/
 .blog {
   width: 90%;
   padding: 5rem;
@@ -227,12 +235,14 @@
 
 .long-line {
   width: 90%;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
   height: 1px;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
 }
 
+/* Main page colors */
+/* Blade section  colors*/
 .test {
   display: flex;
   flex-direction: row;
@@ -257,7 +267,7 @@
 
 .test-text a {
   text-decoration: none;
-  color: #2E5255;
+  color: #2e5255;
   font-size: larger;
 }
 
@@ -287,7 +297,7 @@
 
 .test-buttons a {
   text-decoration: none;
-  color: #2E5255;
+  color: #2e5255;
   font-size: 2rem;
 }
 
@@ -325,6 +335,8 @@
   color: white;
 }
 
+/* Main page colors */
+/* Blade section  colors*/
 footer {
   margin-top: 10rem;
   width: 100%;
@@ -333,12 +345,271 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  background-color: #D3D0CB;
+  background-color: #d3d0cb;
 }
 
 .contact {
   margin-right: 5rem;
-  color: #2E5255;
+  color: #2e5255;
+}
+
+/* Main page colors */
+/* Blade section  colors*/
+.user-background {
+  background-color: #2c3531;
+  width: 100%;
+  height: 100%;
+  color: #d1e8e2;
+  font-family: "Courier New", Courier, monospace;
+}
+.user-background .title-user-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 25vh;
+}
+.user-background .title-user-part h3,
+.user-background .title-user-part form {
+  justify-content: flex-end;
+  flex-direction: row;
+  margin-left: 70%;
+  height: 4vh;
+}
+.user-background .title-user-part h3 :hover,
+.user-background .title-user-part form :hover {
+  background-color: #ffcb9a;
+}
+.user-background .title-user-part h3 button,
+.user-background .title-user-part form button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  width: 6rem;
+  height: 3rem;
+  background-color: #d9b08c;
+  color: #116466;
+  font-size: 1.1rem;
+}
+.user-background .user-nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.user-background .user-nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 65%;
+}
+.user-background .user-nav-bar ul a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-background .user-nav-bar ul a :hover {
+  background-color: #ffcb9a;
+}
+.user-background .user-nav-bar ul a li {
+  color: #d1e8e2;
+  list-style: none;
+  margin: 1rem;
+  width: 10rem;
+  padding: 1rem;
+  background-color: #d9b08c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  margin-bottom: 2rem;
+  color: #116466;
+  font-size: 1.1rem;
+}
+.user-background .user-footer {
+  background-color: #2c3531;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0;
+}
+
+.user-test {
+  background-color: #116466;
+}
+.user-test .user-test-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.user-test .user-test-info h2 {
+  padding-bottom: 1rem;
+}
+.user-test .user-test-form {
+  padding-left: 3rem;
+}
+.user-test .user-test-form p {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+}
+.user-test .user-test-form .user-submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 3rem;
+  flex-direction: row;
+  color: #116466;
+}
+.user-test .user-test-form .user-submit-button :hover {
+  background-color: #ffcb9a;
+}
+.user-test .user-test-form .user-submit-button .submit-button {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border: none;
+  width: 7rem;
+  height: 4rem;
+  background-color: #d9b08c;
+  color: #116466;
+}
+.user-test .user-test-form .user-submit-button .submit-button :hover {
+  background-color: #ffcb9a;
+  width: 8rem;
+  /* doesn't work check why  */
+}
+
+.user-login {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #116466;
+  height: 30rem;
+}
+.user-login input {
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+.user-login .user-login-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.user-login .user-login-button :hover {
+  background-color: #ffcb9a;
+}
+.user-login .user-login-button a {
+  width: 8rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  background-color: #d9b08c;
+  border: none;
+  color: #116466;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  margin-left: 1rem;
+}
+.user-login .user-login-button button {
+  width: 7rem;
+  height: 5rem;
+  font-size: 1.3rem;
+  background-color: #d9b08c;
+  border: none;
+  color: #116466;
+}
+
+/* Main page colors */
+/* Blade section  colors*/
+.user-register {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: #116466;
+  height: 30rem;
+  width: 100%;
+}
+.user-register input {
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+.user-register .user-register-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.user-register .user-register-button :hover {
+  background-color: #ffcb9a;
+}
+.user-register .user-register-button button {
+  width: 8rem;
+  height: 5rem;
+  font-size: 1.3rem;
+  background-color: #d9b08c;
+  border: none;
+  color: #116466;
+}
+
+/* Main page colors */
+/* Blade section  colors*/
+.statistics {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #116466;
+  height: 30rem;
+}
+.statistics form label {
+  font-size: 1.2rem;
+}
+.statistics form select {
+  height: 3rem;
+  width: 10rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+.statistics form input {
+  height: 3rem;
+  width: 15rem;
+  font-size: 1.3rem;
+  color: #116466;
+}
+
+/* Main page colors */
+/* Blade section  colors*/
+.user-recommendations-container {
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #116466;
+  height: 30rem;
 }
 
 * {
@@ -352,8 +623,8 @@ footer {
   flex-direction: column;
   height: 100%;
   width: 100%;
-  background-color: #2E5255;
-  color: #D3D0CB;
+  background-color: #2e5255;
+  color: #d3d0cb;
   font-family: "Courier New", Courier, monospace;
 }
 

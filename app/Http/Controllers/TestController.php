@@ -11,15 +11,20 @@ class TestController extends Controller
     public function index()
     {
         // $questions = json_decode(file_get_contents(storage_path('questions.json')));
+        if(Auth::user()){
+        
+            $user_name = Auth::user()->fullname;
+            $user_id = Auth::user()->id;
+
         $questions = Question::all();
-        return view('test/test', ["questions"=>$questions]);
-    }
+        return view('test/test', compact('questions', 'user_name', 'user_id'));
+    }}
     public function store(Request $request) {
         // do this as many times as you have questions
         // common for all questions/responses in one submit 
         foreach ($request->input('answers') as $question_id => $answer){
         $response = new Response();
-        $response->testing_id = 2;
+        $response->testing_id = 3;
         $response->user_id = Auth::user()->id;
         
         // specific for each question/answer
@@ -39,7 +44,7 @@ return $request->all();
  public function update(Request $request) {
     foreach ($request->input('answers') as $question_id => $answer){
         $response = new Response();
-        $response->test_id = 1;
+        $response->test_id = 3;
         $response->user_id = "??";
         
         // specific for each question/answer

@@ -1,3 +1,8 @@
+@extends('layouts.user-main')
+
+@section('user-content')
+
+<div class="user-register">
 @foreach ($errors->all() as $error)
     <div class="error">{{ $error }}</div>
 @endforeach
@@ -12,7 +17,10 @@
     <input type="password" name="password" value="" placeholder="Insert password here">
 
     <input type="password" name="password_confirmation" value="" placeholder="Insert password here">
-
+    <div class="user-register-button">
     <button>Register</button>
+</div>
+    </div>
 
 </form>
+@endsection
