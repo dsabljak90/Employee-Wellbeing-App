@@ -1,0 +1,30 @@
+@import "../colors.scss";
+
+.statistics {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: $user-content-color;
+    height: 30rem;
+    form {
+        label {
+            font-size: 1.2rem;
+        }
+
+        select {
+            height: 3rem;
+            width: 10rem;
+            font-size: 1.3rem;
+            color: $user-content-color;
+        }
+
+        input {
+            height: 3rem;
+            width: 15rem;
+            font-size: 1.3rem;
+            color: $user-content-color;
+        }
+    }
+}

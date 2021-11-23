@@ -31,7 +31,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 function App() {
+  // const [login, setLogin] = useState(false);
+  console.log(document.cookie);
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsxs)("div", {
     className: "main-background",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Pages_Header__WEBPACK_IMPORTED_MODULE_2__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Pages_Aboutus__WEBPACK_IMPORTED_MODULE_3__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Pages_Advices__WEBPACK_IMPORTED_MODULE_4__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Pages_Blog__WEBPACK_IMPORTED_MODULE_5__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Pages_Test__WEBPACK_IMPORTED_MODULE_6__["default"], {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_8__.jsx)(_Pages_Foorter__WEBPACK_IMPORTED_MODULE_7__["default"], {})]
@@ -79,6 +82,7 @@ __webpack_require__.r(__webpack_exports__);
 function AboutUs() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("section", {
+      id: "about",
       className: "about-us",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
         children: "About Us"
@@ -292,7 +296,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-function Header() {
+
+function Header(_ref) {
+  var user = _ref.user;
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("header", {
       className: "header",
@@ -302,14 +308,14 @@ function Header() {
           className: "network"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
           className: "small-title",
-          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", {
+          children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", {
             children: "Small title above"
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "links",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-              href: "",
+              href: "#about-us",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: "Link "
+                children: "About Us"
               })
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
               href: "",
@@ -334,22 +340,23 @@ function Header() {
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
             className: "short-line"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
             className: "big-title",
-            children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
-              children: "Small title"
-            }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
               children: "Big Titile"
-            })]
+            })
           })]
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
           className: "header-login",
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-            href: "",
+            href: "/login",
             children: "Login"
-          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
-            className: "test-button",
-            children: "Test/Results"
+          }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+            href: "/login",
+            children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+              className: "test-button",
+              children: "Test/Results"
+            })
           })]
         })]
       })
@@ -456,7 +463,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_App__WEBPACK_IMPORTED_MODULE_2__["default"], {}), document.getElementById("app"));
+react_dom__WEBPACK_IMPORTED_MODULE_1__.render( /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_Components_App__WEBPACK_IMPORTED_MODULE_2__["default"], {
+  user: document.getElementById("app").dataset.user
+}), document.getElementById("app"));
 
 /***/ }),
 
@@ -26846,7 +26855,7 @@ exports.version = ReactVersion;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 
-
+window.React1 = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 function checkDCE() {
   /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
   if (
@@ -31668,7 +31677,7 @@ if (false) {} else {
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunk"] = self["webpackChunk"] || [];
+/******/ 		var chunkLoadingGlobal = globalThis["webpackChunk"] = globalThis["webpackChunk"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	})();

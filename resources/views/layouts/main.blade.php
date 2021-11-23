@@ -7,9 +7,22 @@
     <title>Document</title>
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 </head>
-<body>
-    
+<!-- 
+@if(isset($user_name)&& $user_id ===2)
+<a href="/test"><h2>{{ $user_name }}</h2></a>
 
+@endif
+
+@if(isset($user_name))
+<h2>{{ $user_name }}</h2>
+
+@endif  this render user to the main page. -->
+    
+<body>
+<!-- <form action="{{ route('logout') }}" method="post">
+    @csrf
+    <button>Logout</button>
+</form> -->
 @yield('content')
 
 
