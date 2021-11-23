@@ -6,8 +6,11 @@ use Illuminate\Http\Request;
 
 class StatisticsController extends Controller
 {
-     public function index ()
+     public function reactApp()
     {
-    return view ('statistics/statistics');
+        return view('statistics.react-app');
     }
+    public function answers(Request $request){
+        return $request->input();
+}
 }

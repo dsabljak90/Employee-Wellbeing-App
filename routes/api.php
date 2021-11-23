@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Mail\WelcomeMail;
@@ -18,3 +19,5 @@ use App\Mail\WelcomeMail;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/answers', 'Api\StatisticsController@show');
