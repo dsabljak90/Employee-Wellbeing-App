@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 @extends('layouts.user-main')
 
 @section('user-content')
@@ -49,4 +47,3 @@
 
 
 
->>>>>>> responses
