@@ -28,17 +28,23 @@
     <div class="user-statistics-recommendation">
 
     
-      <h2>Recommendation
+      <h2>Recommendation</h2>
       @if(isset($user_recommendation))
       
-      {{ $user_recommendation }}
+  
+         <h3>{{ $user_recommendation }}</h3> 
+
     
     @endif
     
-    </h2>
+    
 
       </div>
       
+<div class="user-chart-statistics"id='app'>
+<script src="{{ mix('js/statistics.js') }}"></script>
+
+</div>
 </section>
 
 

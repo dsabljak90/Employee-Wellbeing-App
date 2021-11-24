@@ -6,7 +6,7 @@ import Advices from "./Pages/Advices";
 import Blog from "./Pages/Blog";
 import Test from "./Pages/Test";
 import Footer from "./Pages/Foorter";
-import { Link } from "react-router-dom";
+
 export default function App() {
     // const [login, setLogin] = useState(false);
     console.log(document.cookie);

@@ -32,7 +32,7 @@ export default function App() {
         {
             name: "Question 1",
 
-            pv: answers.answer,
+            answer: answers.answer,
         },
         {
             name: "Question 2",

@@ -7,10 +7,14 @@ footer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
     background-color: $font-color;
 }
 .contact {
+    margin-right: 5rem;
+    color: $background-color;
+}
+.original {
     margin-right: 5rem;
     color: $background-color;
 }

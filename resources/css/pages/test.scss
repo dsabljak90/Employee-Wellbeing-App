@@ -14,11 +14,18 @@
     justify-content: center;
     width: 40%;
     padding: 3rem;
+
+    h3 {
+        padding: 1rem;
+        text-align: center;
+    }
+    p {
+        padding: 1rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
 }
 
-.test-text p {
-    padding: 1rem;
-}
 .test-text a {
     text-decoration: none;
     color: $background-color;
@@ -36,8 +43,6 @@
 }
 
 .reg-button:hover {
-    width: 15rem;
-    height: 10rem;
     opacity: 0.5;
 }
 .test-buttons {

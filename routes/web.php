@@ -46,4 +46,4 @@ Route::post('/test/{id}/assign', 'TestController@assignTest');
 Route::get('/statistics/{param?}', 'StatisticsController@reactApp')->where('param', '.*')->name('statistics');
 Route::get('/info', 'InfoController@index');
 
-Route::get('/statistics', 'ResponseController@total_response'); 
+//Route::get('/statistics', 'ResponseController@total_response'); 
