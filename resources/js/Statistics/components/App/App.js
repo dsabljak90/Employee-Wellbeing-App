@@ -80,7 +80,7 @@ export default function App() {
                 }}
             >
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" tick={{ stroke: "red" }} />
+                <XAxis dataKey="name" tick={{ stroke: "purple" }} />
                 <YAxis tick={{ stroke: "blue" }} />
                 <Tooltip />
                 <Legend />

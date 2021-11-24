@@ -43,7 +43,7 @@
 
         
         <div class="user-submit-button">
-            <input class="submit-button" type="submit" value="Submit">
+          <a>  <input class="submit-button" type="submit" value="Submit"></a>
     </div>    
 
 
@@ -52,7 +52,7 @@
     </section>
 
 <!--  This abouve is just for showing.-->
-@extends('layouts.user-main')
+ @extends('layouts.user-main')
 
 @section('user-content')
 @if(\Gate::allows('admin')) 
@@ -128,3 +128,4 @@
 
 
 @endsection
+ 

@@ -2213,7 +2213,7 @@ function App() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(recharts__WEBPACK_IMPORTED_MODULE_8__.XAxis, {
         dataKey: "name",
         tick: {
-          stroke: "red"
+          stroke: "purple"
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(recharts__WEBPACK_IMPORTED_MODULE_9__.YAxis, {
         tick: {

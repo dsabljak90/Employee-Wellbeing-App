@@ -33,3 +33,31 @@
     height: 1px;
     margin-top: 1.5rem;
 }
+
+@media (max-width: 500px) {
+    .about-us {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        height: 80rem;
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    .about-us-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 3rem;
+        padding-bottom: 5rem;
+        height: 100%;
+        text-align: center;
+    }
+    .up-line {
+        display: none;
+    }
+}
