@@ -29,6 +29,10 @@ mix.js(
     "resources/js/Recommendations/index.js",
     "public/js/recommendations.js"
 ).react();
+mix.js(
+    "resources/js/ManagersStatistics/index.js",
+    "public/js/managersstatistics.js"
+).react();
 // mix.js("resources/js/Info/index.js", "public/js/info.js").react();
 mix.browserSync({
     host: "localhost",
