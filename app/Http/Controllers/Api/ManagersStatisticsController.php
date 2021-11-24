@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
-use Auth;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Response;
@@ -16,7 +16,7 @@ class ManagersStatisticsController extends Controller
 
         // $testing = Testing::findOrfail($testing_id);
         $manager_id = $user->manager_id;
-        dd($manager_id);
+        // dd($manager_id);
         $response = Response::where('$manager_id', $manager_id);
 
         return ($response);
