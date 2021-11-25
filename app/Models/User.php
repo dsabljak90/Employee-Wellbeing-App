@@ -14,7 +14,7 @@ use App\Models\Question;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable, HasRoles;
+    use HasApiTokens, HasFactory, Notifiable;
 public function questions(){
     return $this->belongsToMany('App\Models\Question', 'responses');
 }

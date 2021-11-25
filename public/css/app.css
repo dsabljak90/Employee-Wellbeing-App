@@ -80,11 +80,7 @@
   justify-content: center;
   text-decoration: none;
   background-color: #9fb1bcff;
-<<<<<<< HEAD
-  color: #2e525b;
-=======
   color: #2e5255;
->>>>>>> 638f734e9340e9d7b1aca9ba72767cb0604beb7d
 }
 
 .test-button:hover {
@@ -271,11 +267,7 @@
 
 .test-text a {
   text-decoration: none;
-<<<<<<< HEAD
-  color: #2e525b;
-=======
   color: #2e5255;
->>>>>>> 638f734e9340e9d7b1aca9ba72767cb0604beb7d
   font-size: larger;
 }
 
@@ -305,11 +297,7 @@
 
 .test-buttons a {
   text-decoration: none;
-<<<<<<< HEAD
-  color: #2e525b;
-=======
   color: #2e5255;
->>>>>>> 638f734e9340e9d7b1aca9ba72767cb0604beb7d
   font-size: 2rem;
 }
 
@@ -362,9 +350,6 @@ footer {
 
 .contact {
   margin-right: 5rem;
-<<<<<<< HEAD
-  color: #2e525b;
-=======
   color: #2e5255;
 }
 
@@ -597,7 +582,7 @@ footer {
   justify-content: space-around;
   flex-direction: column;
   background-color: #116466;
-  height: 30rem;
+  height: 50rem;
 }
 .statistics form label {
   font-size: 1.2rem;
@@ -615,6 +600,11 @@ footer {
   color: #116466;
 }
 
+#app {
+  width: 300px;
+  height: 300px;
+}
+
 /* Main page colors */
 /* Blade section  colors*/
 .user-recommendations-container {
@@ -625,7 +615,6 @@ footer {
   flex-direction: column;
   background-color: #116466;
   height: 30rem;
->>>>>>> 638f734e9340e9d7b1aca9ba72767cb0604beb7d
 }
 
 * {
@@ -639,11 +628,7 @@ footer {
   flex-direction: column;
   height: 100%;
   width: 100%;
-<<<<<<< HEAD
-  background-color: #2e525b;
-=======
   background-color: #2e5255;
->>>>>>> 638f734e9340e9d7b1aca9ba72767cb0604beb7d
   color: #d3d0cb;
   font-family: "Courier New", Courier, monospace;
 }

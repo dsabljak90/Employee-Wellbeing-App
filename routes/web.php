@@ -39,7 +39,8 @@ Route::get('/send-enrollment', [EnrollmentController::class, 'sendEnrollmentNoti
 Route::get('/recommendations/{param?}', 'RecommendationsController@reactApp')->where('param', '.*')->name('recommendations');
 // Route::get('/recommendations', 'RecommendationsController@index');
 Route::post('/test', 'TestController@store');
+
+//Route::get('/statistics', 'ResponseController@total_response'); 
 Route::get('/statistics/{param?}', 'StatisticsController@reactApp')->where('param', '.*')->name('statistics');
 Route::get('/info', 'InfoController@index');
-
-Route::get('/statistics', 'ResponseController@total_response'); 
+//Route::get('/statistics', 'ResponseController@total_response'); 

@@ -1,12 +1,10 @@
-<<<<<<< HEAD
-=======
 @extends('layouts.user-main')
 
 @section('user-content')
 
 <section class="statistics">
 
-  <form action="/statistics/statistics" method="GET">
+  <form action="/statistics" method="GET">
   <label for="testing">Testing round:</label>
   <select name="testing">
   <option value='1'>Test Round - 1</option>
@@ -40,13 +38,14 @@
     </h2>
 
       </div>
-      
+<div id='app' style=>
+<script src="{{ mix('js/statistics.js') }}"></script>
+
+</div>      
+ </div>
+<div id='app'>
+<script src="{{ mix('js/statistics.js') }}"></script>
 </section>
 
 
     @endsection
-
-
-
-
->>>>>>> responses
