@@ -32,8 +32,9 @@ Route::get('/recommendations', 'RecommendationsController@index');
 //Route::get('/statistics', 'StatisticsController@index');
 //email
 Route::get('/email', 'EmailController@send');
-Route::post('/email', 'EmailController@send');
-//enrollment notifications
+//Route::post('/email', 'EmailController@send');
+
+//enrollment notifications to first user
 Route::get('/send-enrollment', [EnrollmentController::class, 'sendEnrollmentNotification']);
 //Route::get('/recommendations/{param?}', 'RecommendationsController@reactApp')->where('param', '.*')->name('recommendations');
 // Route::get('/recommendations', 'RecommendationsController@index');
@@ -42,6 +43,10 @@ Route::get('/managers_statistics', 'ManagersStatisticsController@reactApp')
     ->middleware(['can:manager'])
     ->name('statistics');
     
+
+//enrollment notifications to all users
+Route::get('/send-enrollment-all', [EnrollmentController::class, 'sendEnrollmentNotificationToAll']);
+
 Route::get('/test/{id?}', 'TestController@index');
 Route::post('/test/{id}', 'TestController@store');
 
