@@ -19,7 +19,9 @@ class ResponseController extends Controller
         
             $user_name = Auth::user()->fullname;
             $user_id = Auth::user()->id;
-   
+   echo $user_name;
+        
+
         $user = Auth::user()->id; // This reds user id from Responses table. User is posible ti auticatre with Auth::user()
        
     
@@ -51,7 +53,7 @@ if($score){
 
            
           }
-          
+          echo $user_name;
         
 
         }

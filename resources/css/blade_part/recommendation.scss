@@ -1,10 +1,60 @@
 @import "../colors.scss";
 .user-recommendations-container {
-    height: 20rem;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
     background-color: $user-content-color;
-    height: 30rem;
+    height: 35rem;
+    width: 100%;
+    color: $user-font-color-dark;
+    .user-recommendations-recommendation,
+    .user-recommendations-user-info {
+        padding: 1rem;
+        width: 50%;
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h3 {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .user-chart-recommendations {
+        width: 50rem;
+        height: 20rem;
+    }
+}
+
+@media (max-width: 700px) {
+    .user-recommendations-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: $user-content-color;
+        height: 35rem;
+        width: 100%;
+        color: $user-font-color-dark;
+        .user-recommendations-recommendation,
+        .user-recommendations-user-info {
+            padding: 1rem;
+            width: 50%;
+            height: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            h3 {
+                margin-bottom: 1rem;
+            }
+        }
+
+        .user-chart-recommendations {
+            display: none;
+        }
+    }
 }

@@ -4,7 +4,7 @@
 
 <section class="statistics">
 
-  <form action="/statistics/statistics" method="GET">
+  <form action="/statistics" method="GET">
   <label for="testing">Testing round:</label>
   <select name="testing">
   <option value='1'>Test Round - 1</option>
@@ -28,17 +28,23 @@
     <div class="user-statistics-recommendation">
 
     
-      <h2>Recommendation
+      <h2>Recommendation</h2>
       @if(isset($user_recommendation))
       
-      {{ $user_recommendation }}
+  
+         <h3>{{ $user_recommendation }}</h3> 
+
     
     @endif
     
-    </h2>
+    
 
       </div>
       
+<div class="user-chart-statistics"id='app'>
+<script src="{{ mix('js/statistics.js') }}"></script>
+
+</div>
 </section>
 @if(\Gate::allows('manager')) 
 <form action="/managers_statistics/{{ $testing->id }}/assign" method="post">

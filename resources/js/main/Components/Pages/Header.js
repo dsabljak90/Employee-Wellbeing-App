@@ -4,37 +4,41 @@ export default function Header({ user }) {
         <>
             <header className="header">
                 <div className="header-firstpart">
-                    <div className="network"></div>
+                    <div className="network">
+                        <img src="/img/logo.png"></img>
+                    </div>
                     <div className="small-title">
                         <h3>{/* <Link to="/info">{user}</Link>{" "} */}</h3>
-                        <h2>Small title above</h2>
+                        <h2></h2>
                         <div className="links">
-                            <a href="#about-us">
+                            <a href="/">
+                                <li>Home</li>
+                            </a>
+                            <a href="">
                                 <li>About Us</li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>General Advices </li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>Blog</li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>Test </li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>Contact </li>
                             </a>
                         </div>
                         <div className="short-line"></div>
                         <div className="big-title">
-                            <h1>Big Titile</h1>
+                            <h1>Manatu Wellbeing</h1>
                         </div>
                     </div>
 
                     <div className="header-login">
-                        <a href="/login">Login</a>
                         <a href="/login">
-                            <div className="test-button">Test/Results</div>
+                            <div className="test-button">Login/Register</div>
                         </a>
                     </div>
                 </div>

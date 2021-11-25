@@ -33,7 +33,7 @@ export default function App() {
         {
             name: "Question 1",
 
-            pv: answers.answer,
+            answer: answers.answer,
         },
         {
             name: "Question 2",
@@ -81,7 +81,7 @@ export default function App() {
                 }}
             >
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" tick={{ stroke: "red" }} />
+                <XAxis dataKey="name" tick={{ stroke: "purple" }} />
                 <YAxis tick={{ stroke: "blue" }} />
                 <Tooltip />
                 <Legend />
