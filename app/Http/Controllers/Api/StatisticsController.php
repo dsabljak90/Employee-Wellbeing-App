@@ -26,4 +26,13 @@ class StatisticsController extends Controller
         return ($response);
     }
 
+
+//     public function show()
+//     {
+//         $user_id = Auth::id();
+//         $response = Response::where('user_id', $user_id)->get();
+// // ->where('testing_id', 2)
+//         return ($response);
+//     }
+
 }

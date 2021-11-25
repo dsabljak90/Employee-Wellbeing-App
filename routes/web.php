@@ -49,6 +49,8 @@ Route::get('/send-enrollment-all', [EnrollmentController::class, 'sendEnrollment
 
 
 Route::post('/test/{id}', 'TestController@store');
+Route::get('/test/{id}', 'TestController@index');
+//Route::post('/test/{id}', 'TestController@store');
 
 Route::post('/test/{id}/assign', 'TestController@assignTest');
 Route::post('/statistics/{param?}', 'StatisticsController@reactApp')->where('param', '.*')->name('statistics');

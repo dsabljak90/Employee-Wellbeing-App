@@ -82,24 +82,24 @@ return $request->all();
         $testing->opened = true;
         $testing->save();
         //sends emails with instructions to users after admin click on assign test button
-        $email = new \SendGrid\Mail\Mail(); 
-        $email->setTemplateId("d-7112ff9ed94748fb8d7e8743c495510c");//SendGrid email template ID
-        $email->setFrom("radcer2@seznam.cz", "Manatu Wellbeing App"); //from - to be connected with user database
-        $email->setSubject("testing email from wellbeing app"); //subject
-        $email->addTo("cerny.rada@gmail.com", "Wellbeing User"); //email to
+        // $email = new \SendGrid\Mail\Mail(); 
+        // $email->setTemplateId("d-7112ff9ed94748fb8d7e8743c495510c");//SendGrid email template ID
+        // $email->setFrom("radcer2@seznam.cz", "Manatu Wellbeing App"); //from - to be connected with user database
+        // $email->setSubject("testing email from wellbeing app"); //subject
+        // $email->addTo("cerny.rada@gmail.com", "Wellbeing User"); //email to
         //$email->addContent("text/plain", "Welcome to our famous wellbeing app!"); //not needed when using email template id 
         //$email->addContent(
             //"text/html", "Dear Wellbeing App User,</br></br> welcome to our wellbeing app!</br></br> Are you ready to know more? </br></br> Just click on the button below!" //email body
         //); //not needed
-        $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
-        try {
-            $response = $sendgrid->send($email);
-            print $response->statusCode() . "\n";
-            print_r($response->headers());
-            print $response->body() . "\n";
-        } catch (Exception $e) {
-            echo 'Caught exception: '. $e->getMessage() ."\n";
-        }
+        // $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+        // try {
+        //     $response = $sendgrid->send($email);
+        //     print $response->statusCode() . "\n";
+        //     print_r($response->headers());
+        //     print $response->body() . "\n";
+        // } catch (Exception $e) {
+        //     echo 'Caught exception: '. $e->getMessage() ."\n";
+        // }
 
         
         return redirect('/test/' . $testing->id);

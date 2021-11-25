@@ -123,11 +123,7 @@
     </section>
     @endif
 @else 
-<<<<<<< HEAD
 <h1>Come back later</h1>
-=======
-<h1 class="user-comebacklate">Come back later</h1>
->>>>>>> conection
 @endif
 
 

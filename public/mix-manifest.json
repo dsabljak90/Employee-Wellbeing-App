@@ -1,20 +1,7 @@
 {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    "/js/main.js": "/js/main.js?id=6a9687142eaee3677c1c",
-    "/js/statistics.js": "/js/statistics.js?id=0a8ae4008db6a5e80e0b",
-    "/js/recommendations.js": "/js/recommendations.js?id=c92151b509c4a8dac395",
-=======
-    "/js/main.js": "/js/main.js?id=afd99b578ca4b5a587ce",
-    "/js/statistics.js": "/js/statistics.js?id=eb33276406ab2a46ddd2",
-    "/js/recommendations.js": "/js/recommendations.js?id=c0b03d22bcd3c8b5041e",
+    "/js/main.js": "/js/main.js?id=1d72a58e0bd871177be7",
+    "/js/statistics.js": "/js/statistics.js?id=520ef90ebecff438249d",
+    "/js/recommendations.js": "/js/recommendations.js?id=05700488ce60f10f3220",
     "/js/managersstatistics.js": "/js/managersstatistics.js?id=93d2ca3e0e5d24f1e00d",
->>>>>>> 2ebd93260bc94ded0420ff1030db793ac280180a
-    "/css/app.css": "/css/app.css?id=2de6eb3ab3d66e3c7f7c"
-=======
-    "/js/main.js": "/js/main.js?id=92c5c696dad0495c271e",
-    "/js/statistics.js": "/js/statistics.js?id=4e9213acc053e9b69d4b",
-    "/js/recommendations.js": "/js/recommendations.js?id=8af2c41cde6563c50748",
     "/css/app.css": "/css/app.css?id=f57e83f207c0f89a88ab"
->>>>>>> conection
 }
