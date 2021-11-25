@@ -11,7 +11,7 @@
 @if($testing->opened)
 
     @if($responses->count() > 0)
-    <h1>Uz si odpovedal</h1>
+    <h1>You have already answered</h1>
     @else
 
     @if ($errors->any())
@@ -69,7 +69,7 @@
     </section>
     @endif
 @else 
-<h1>Come back late</h1>
+<h1>Come back later</h1>
 @endif
 
 

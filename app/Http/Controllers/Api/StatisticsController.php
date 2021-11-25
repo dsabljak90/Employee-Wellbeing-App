@@ -10,12 +10,17 @@ use Illuminate\Support\Facades\Auth;
 
 class StatisticsController extends Controller
 {
-    public function show()
+    public function show(Request $request)
     {
+
+
         $user_id = Auth::id();
 
-        $response = Response::where('user_id', $user_id)->where('testing_id', 2)->get();
+        $user_id = $request->get('user_id');
+        // dd($user_id);
 
+        $response = Response::where('user_id', $user_id)->get();
+// ->where('testing_id', 2)
         return ($response);
     }
 

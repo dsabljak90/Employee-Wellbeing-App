@@ -14,7 +14,7 @@ class RecommendationsController extends Controller
     {
         $user_id = Auth::id();
 
-        $response = Response::where('user_id', $user_id)->where('testing_id', 2)->get();
+        $response = Response::where('user_id', $user_id)->get();
 
         return ($response);
     }

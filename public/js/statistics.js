@@ -2141,20 +2141,21 @@ function App() {
 
   var getAnswers = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
-      var resp;
+      var userId, resp;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              _context.next = 2;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/answers");
+              userId = document.querySelector("input").value;
+              _context.next = 3;
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/answers?user_id=" + userId);
 
-            case 2:
+            case 3:
               resp = _context.sent;
               console.log(resp.data);
               setAnswers(resp.data);
 
-            case 5:
+            case 6:
             case "end":
               return _context.stop();
           }

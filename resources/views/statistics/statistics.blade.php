@@ -40,7 +40,11 @@
       </div>
       
 </section>
-
+@if(\Gate::allows('manager')) 
+<form action="/managers_statistics/{{ $testing->id }}/assign" method="post">
+    @csrf
+    <button type="submit" name = "submit" value = "Save">See manager's statistics</button>
+</form>
 
     @endsection
 

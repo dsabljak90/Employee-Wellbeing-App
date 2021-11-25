@@ -54,9 +54,9 @@ class TestController extends Controller
         
 
         }
-                dd($request->input('answers'));
-return $request->all();
-    return redirect('/');
+                // dd($request->input('answers'));
+// return $request->all();
+    return redirect(action('RecommendationsController@index'));
     }
  
         
