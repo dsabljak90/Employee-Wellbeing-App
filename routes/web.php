@@ -47,7 +47,7 @@ Route::get('/managers_statistics', 'ManagersStatisticsController@reactApp')
 //enrollment notifications to all users
 Route::get('/send-enrollment-all', [EnrollmentController::class, 'sendEnrollmentNotificationToAll']);
 
-Route::get('/test/{id?}', 'TestController@index');
+
 Route::post('/test/{id}', 'TestController@store');
 
 Route::post('/test/{id}/assign', 'TestController@assignTest');
@@ -55,4 +55,4 @@ Route::post('/statistics/{param?}', 'StatisticsController@reactApp')->where('par
 Route::get('/statistics/{param?}', 'StatisticsController@reactApp')->where('param', '.*')->name('statistics');
 Route::get('/info', 'InfoController@index');
 
-Route::get('/statistics', 'ResponseController@total_response'); 
+//Route::get('/statistics', 'ResponseController@total_response'); 

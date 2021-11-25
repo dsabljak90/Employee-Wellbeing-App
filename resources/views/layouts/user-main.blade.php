@@ -17,9 +17,11 @@
                 // In this way we can check the user and make a link on him 
                 @endif -->
 
-    
+                <div class="user-title-logo">
+                    <img src="/img/logo-user.png" alt="">
+                </div>
              
-                <h1>Test Area Title</h1>
+                <h1>Manatu Wellbeing Test</h1>
 
 
                 @if(isset($user_name))
@@ -42,6 +44,7 @@
                 <a href="/statistics/statistics">
                     <li>Statistic</li>
                 </a>
+                
                
                 </ul>
 

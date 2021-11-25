@@ -9,6 +9,7 @@
         flex-direction: column;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        color: $user-font-color-dark;
 
         h2 {
             padding-bottom: 1rem;
@@ -17,12 +18,34 @@
 
     .user-test-form {
         padding-left: 3rem;
+        color: $user-font-color-dark;
         p {
-            padding-top: 2rem;
-            padding-bottom: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1.5rem;
             font-size: 1.2rem;
         }
+        .user-questions {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+            .user-questions-style {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                margin-bottom: 1rem;
 
+                p {
+                    padding-top: 2rem;
+                    padding-bottom: 1rem;
+                    font-size: 1.2rem;
+                }
+                label {
+                    padding: 1rem;
+                }
+            }
+        }
         .user-submit-button {
             display: flex;
             align-items: center;
@@ -30,22 +53,28 @@
             margin-right: 3rem;
             flex-direction: row;
             color: $user-links-font-color;
-            :hover {
-                background-color: $user-hover-color;
-            }
+
             .submit-button {
                 margin-top: 2rem;
                 margin-bottom: 3rem;
                 border: none;
                 width: 7rem;
                 height: 4rem;
-                background-color: $user-links-color;
-                color: $user-links-font-color;
+                background-color: $user-area-background;
+                color: $user-font-color;
                 :hover {
                     background-color: $user-hover-color;
-                    width: 8rem; /* doesn't work check why  */
                 }
             }
         }
     }
+}
+.user-comebacklate {
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $user-content-color;
+    color: $user-font-color-dark;
 }

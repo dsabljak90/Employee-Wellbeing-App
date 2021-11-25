@@ -28,9 +28,7 @@
     flex-direction: row;
     padding: 2rem;
 }
-.advices-text-detiles :nth-child(n + 3) {
-    margin-top: 7rem;
-}
+
 .advice-one {
     padding: 2rem;
 }
@@ -40,4 +38,48 @@
     height: 1px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1030px) {
+    .advices-text-detiles {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 2rem;
+    }
+    .advices-text-detiles :nth-child(n + 3) {
+        margin: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .advices {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+        height: 65rem;
+    }
+
+    .advices img {
+        display: none;
+    }
+    .advices-text-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+
+    .advice-one {
+        padding: 2rem;
+        width: 100%;
+        h3 {
+            margin-bottom: 1rem;
+        }
+    }
 }
