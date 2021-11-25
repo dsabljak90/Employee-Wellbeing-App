@@ -40,29 +40,16 @@
     
 
       </div>
-<<<<<<< HEAD
-<div id='app' style=>
-<script src="{{ mix('js/statistics.js') }}"></script>
-
-</div>      
- </div>
-<div id='app'>
-<script src="{{ mix('js/statistics.js') }}"></script>
-=======
       
 <div class="user-chart-statistics"id='app'>
 <script src="{{ mix('js/statistics.js') }}"></script>
 
 </div>
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 </section>
 
 
     @endsection
-<<<<<<< HEAD
-=======
 
 
 
 
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f

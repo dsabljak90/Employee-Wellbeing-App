@@ -98,13 +98,8 @@
   align-items: center;
   justify-content: center;
   text-decoration: none;
-<<<<<<< HEAD
-  background-color: #9fb1bcff;
-  color: #2e5255;
-=======
   background-color: #c1c8e4;
   color: #4a74df;
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 }
 
 .test-button:hover {
@@ -127,6 +122,11 @@
   background-color: #c1c8e4;
   height: 1px;
   margin-top: 1.5rem;
+}
+
+.network > img {
+  width: 15rem;
+  height: 15rem;
 }
 
 @media (max-width: 1030px) {
@@ -293,10 +293,6 @@
   display: flex;
   flex-direction: row;
   padding: 2rem;
-}
-
-.advices-text-detiles :nth-child(n+3) {
-  margin-top: 7rem;
 }
 
 .advice-one {
@@ -492,11 +488,7 @@
 
 .test-text a {
   text-decoration: none;
-<<<<<<< HEAD
-  color: #2e5255;
-=======
   color: #4a74df;
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
   font-size: larger;
 }
 
@@ -526,11 +518,7 @@
 
 .test-buttons a {
   text-decoration: none;
-<<<<<<< HEAD
-  color: #2e5255;
-=======
   color: #4a74df;
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
   font-size: 2rem;
 }
 
@@ -677,16 +665,12 @@ footer {
 
 .contact {
   margin-right: 5rem;
-<<<<<<< HEAD
-  color: #2e5255;
-=======
   color: #4a74df;
 }
 
 .original {
   margin-right: 5rem;
   color: #4a74df;
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 }
 
 @media (max-width: 500px) {
@@ -728,7 +712,7 @@ footer {
   width: 100%;
   height: 100%;
   color: #d1e8e2;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
 }
 .user-background .title-user-part {
   display: flex;
@@ -736,7 +720,7 @@ footer {
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 25vh;
+  height: 30vh;
 }
 .user-background .title-user-part h3,
 .user-background .title-user-part form {
@@ -767,6 +751,7 @@ footer {
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 1rem;
 }
 .user-background .user-nav-bar ul {
   display: flex;
@@ -824,7 +809,7 @@ footer {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 25vh;
+    height: 45vh;
     padding: 1rem;
   }
   .user-background .title-user-part h1 {
@@ -844,7 +829,7 @@ footer {
   }
   .user-background .title-user-part h3 button,
 .user-background .title-user-part form button {
-    margin-top: 1rem;
+    margin-top: 3rem;
     margin-bottom: 1rem;
     border: none;
     width: 6rem;
@@ -859,6 +844,7 @@ footer {
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-top: 1rem;
   }
   .user-background .user-nav-bar ul {
     display: flex;
@@ -904,7 +890,36 @@ footer {
     text-align: center;
     margin: 0;
   }
+
+  .user-title-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    width: 100%;
+    margin-bottom: 1rem;
+    height: 5rem;
+  }
+
+  .user-title-logo > img {
+    width: 13rem;
+    height: 10rem;
+  }
 }
+.user-title-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  justify-items: flex-start;
+  width: 100%;
+  height: 5rem;
+}
+
+.user-title-logo > img {
+  width: 13rem;
+  height: 10rem;
+}
+
 .user-test {
   background-color: #c1c8e4;
 }
@@ -1004,7 +1019,8 @@ footer {
   height: 10rem;
 }
 .user-login .user-login-button :hover {
-  background-color: #ffcb9a;
+  background-color: #8860d0;
+  color: #c1c8e4;
 }
 .user-login .user-login-button a {
   width: 8rem;
@@ -1020,6 +1036,7 @@ footer {
   text-decoration: none;
   text-align: center;
   margin-left: 1rem;
+  background-color: #5ab9ea;
 }
 .user-login .user-login-button button {
   width: 7rem;
@@ -1028,8 +1045,68 @@ footer {
   background-color: #c1c8e4;
   border: none;
   color: #5680e9;
+  background-color: #5ab9ea;
 }
 
+@media (max-width: 700px) {
+  .user-login {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #c1c8e4;
+    height: 30rem;
+  }
+  .user-login input {
+    height: 3rem;
+    width: 15rem;
+    font-size: 1.3rem;
+    color: #c1c8e4;
+  }
+  .user-login .user-login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+  }
+  .user-login .user-login-button :hover {
+    background-color: #8860d0;
+    color: #c1c8e4;
+  }
+  .user-login .user-login-button a {
+    width: 8rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    background-color: #c1c8e4;
+    border: none;
+    color: #5680e9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1rem;
+    background-color: #5ab9ea;
+  }
+  .user-login .user-login-button button {
+    width: 7rem;
+    height: 5rem;
+    font-size: 1.3rem;
+    background-color: #c1c8e4;
+    border: none;
+    color: #5680e9;
+    background-color: #5ab9ea;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
 /* Main page colors */
 /* Blade section  colors*/
 /* #5680e9
@@ -1062,15 +1139,16 @@ footer {
   height: 10rem;
 }
 .user-register .user-register-button :hover {
-  background-color: #ffcb9a;
+  background-color: #8860d0;
+  color: #c1c8e4;
 }
 .user-register .user-register-button button {
   width: 8rem;
   height: 5rem;
   font-size: 1.3rem;
-  background-color: #c1c8e4;
   border: none;
   color: #5680e9;
+  background-color: #5ab9ea;
 }
 
 /* Main page colors */
@@ -1088,10 +1166,6 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-<<<<<<< HEAD
-  background-color: #116466;
-  height: 50rem;
-=======
   background-color: #c1c8e4;
   width: 100%;
   color: #3a5494;
@@ -1100,7 +1174,6 @@ footer {
   height: 7rem;
   margin-top: 2rem;
   padding: 1rem;
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 }
 .statistics form label {
   font-size: 1.2rem;
@@ -1147,13 +1220,6 @@ footer {
   margin-bottom: 2rem;
 }
 
-<<<<<<< HEAD
-#app {
-  width: 300px;
-  height: 300px;
-}
-
-=======
 @media (max-width: 700px) {
   .statistics {
     height: 47rem;
@@ -1220,7 +1286,6 @@ footer {
     display: none;
   }
 }
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 /* Main page colors */
 /* Blade section  colors*/
 /* #5680e9
@@ -1249,10 +1314,6 @@ footer {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-<<<<<<< HEAD
-  background-color: #116466;
-  height: 30rem;
-=======
 }
 .user-recommendations-container .user-recommendations-recommendation h3,
 .user-recommendations-container .user-recommendations-user-info h3 {
@@ -1261,7 +1322,6 @@ footer {
 .user-recommendations-container .user-chart-recommendations {
   width: 50rem;
   height: 20rem;
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 }
 
 @media (max-width: 700px) {
@@ -1305,14 +1365,9 @@ footer {
   flex-direction: column;
   height: 100%;
   width: 100%;
-<<<<<<< HEAD
-  background-color: #2e5255;
-  color: #d3d0cb;
-=======
   background-color: #4a74df;
   color: #c1c8e4;
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 /*# sourceMappingURL=app.css.map*/

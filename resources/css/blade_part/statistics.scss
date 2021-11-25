@@ -7,13 +7,9 @@
     justify-content: center;
     flex-direction: column;
     background-color: $user-content-color;
-<<<<<<< HEAD
-    height: 50rem;
-=======
     width: 100%;
     color: $user-font-color-dark;
 
->>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
     form {
         height: 7rem;
         margin-top: 2rem;
@@ -138,8 +134,4 @@
             display: none;
         }
     }
-}
-#app {
-    width: 300px;
-    height: 300px;
 }

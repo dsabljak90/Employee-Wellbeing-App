@@ -22,15 +22,18 @@
         justify-content: center;
         height: 10rem;
         :hover {
-            background-color: $user-hover-color;
+            background-color: $dark-red;
+            color: $user-links-color;
         }
         button {
             width: 8rem;
             height: 5rem;
             font-size: 1.3rem;
-            background-color: $user-links-color;
+
             border: none;
+
             color: $user-links-font-color;
+            background-color: $user-area-background;
         }
     }
 }

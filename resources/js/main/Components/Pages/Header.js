@@ -4,7 +4,9 @@ export default function Header({ user }) {
         <>
             <header className="header">
                 <div className="header-firstpart">
-                    <div className="network"></div>
+                    <div className="network">
+                        <img src="/img/logo.png"></img>
+                    </div>
                     <div className="small-title">
                         <h3>{/* <Link to="/info">{user}</Link>{" "} */}</h3>
                         <h2></h2>
@@ -35,8 +37,8 @@ export default function Header({ user }) {
                     </div>
 
                     <div className="header-login">
-                        <a href="/test">
-                            <div className="test-button">Test/Results</div>
+                        <a href="/login">
+                            <div className="test-button">Login/Register</div>
                         </a>
                     </div>
                 </div>
