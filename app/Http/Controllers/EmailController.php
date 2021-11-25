@@ -9,7 +9,6 @@ class EmailController extends Controller
 {
   public function send()
   {
-            dump("sent");
        // If you're using Composer (recommended)
         // Comment out the above line if not using Composer
         // require("<PATH TO>/sendgrid-php.php");
@@ -25,8 +24,8 @@ class EmailController extends Controller
         foreach($user_email as $em){
 
             $email = new \SendGrid\Mail\Mail(); 
-            $email->setTemplateId("d-7112ff9ed94748fb8d7e8743c495510c");//SendGrid email template ID
-            $email->setFrom("radcer2@seznam.cz", "Manatu Wellbeing App"); //from - to be connected with user database
+            $email->setTemplateId("d-5f5dad470eed413eba95a3af6f350f1a");//SendGrid email template ID
+            $email->setFrom("cerny.rada@gmail.com", "Manatu Wellbeing App"); //from - to be connected with user database
             $email->setSubject("testing email from wellbeing app"); //subject
                 /* dd($em->email); */
             $email->addTo($em->email, "Wellbeing User"); //to
@@ -41,7 +40,10 @@ class EmailController extends Controller
                 print $response->statusCode() . "\n";
                 print_r($response->headers());
                 print $response->body() . "\n";
+            dump("sent");
+
             } catch (Exception $e) {
+                print_r("sent success");
                 echo 'Caught exception: '. $e->getMessage() ."\n";
             }
         }
