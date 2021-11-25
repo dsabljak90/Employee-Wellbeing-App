@@ -10,15 +10,19 @@ use App\Models\Testing;
 use App\Models\User;
 class ManagersStatisticsController extends Controller
 {
-     public function show()
+     public function show(Request $request)
     {
-        $user = Auth::user();
-
+        // $user = Auth::user();
+        $user_id = $request->get('user_id');
         // $testing = Testing::findOrfail($testing_id);
-        $manager_id = $user->manager_id;
+        $user_role = $request->get('user_role');
+        // $manager_id = $user->manager_id;
         // dd($manager_id);
-        $response = Response::where('$manager_id', $manager_id);
 
+        $response = $user_id;
+        return $response;
+        $response = Response::where('$manager_id', $manager_id);
+//
         return ($response);
     }
 }

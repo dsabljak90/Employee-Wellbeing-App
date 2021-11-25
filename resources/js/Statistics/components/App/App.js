@@ -18,7 +18,8 @@ import {
 export default function App() {
     const [answers, setAnswers] = useState([]);
     const getAnswers = async () => {
-        const resp = await axios.get("/api/answers");
+        const userId = document.querySelector("input").value;
+        const resp = await axios.get("/api/answers?user_id=" + userId);
 
         console.log(resp.data);
         setAnswers(resp.data);
