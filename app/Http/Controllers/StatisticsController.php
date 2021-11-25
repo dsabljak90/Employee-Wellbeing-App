@@ -8,18 +8,16 @@ use App\Models\EmployeeRecommendation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
-
 class StatisticsController extends Controller
 {
      public function reactApp()
+
     {
-         if(Auth::user()){
+        if(Auth::user()){
         
             $user_name = Auth::user()->fullname;
             $user_id = Auth::user()->id;
-   echo $user_name;
-        
-
+   
         $user = Auth::user()->id; // This reds user id from Responses table. User is posible ti auticatre with Auth::user()
        
     
@@ -51,7 +49,7 @@ if($score){
 
            
           }
-          echo $user_name;
+          
         
 
         }
@@ -66,7 +64,7 @@ if($score){
         return view('/statistics/statistics', compact('user_name', 'user_id','testing' )); 
 
     }
-};
+}
     }
     public function answers(Request $request){
         return $request->input();

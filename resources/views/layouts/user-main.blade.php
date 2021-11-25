@@ -19,7 +19,7 @@
 
     
              
-                <h1>Test Area Title</h1>
+                <h1>Manatu Wellbeing Test</h1>
 
 
                 @if(isset($user_name))

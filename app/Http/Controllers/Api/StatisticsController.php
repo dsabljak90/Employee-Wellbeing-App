@@ -17,6 +17,7 @@ class StatisticsController extends Controller
 
         $response = Response::where('user_id', $user_id)->get();
 
+// ->where('testing_id', 2)
         return ($response);
     }
 

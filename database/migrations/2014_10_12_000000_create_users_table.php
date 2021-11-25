@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
             $table->string('password');
+            $table->string('role')->default('user');
             // $table->string('two_factor_recovery_codes');
             // $table->string('two_factor_secret');
 

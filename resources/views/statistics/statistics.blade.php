@@ -28,16 +28,19 @@
     <div class="user-statistics-recommendation">
 
     
-      <h2>Recommendation
+      <h2>Recommendation</h2>
       @if(isset($user_recommendation))
       
-      {{ $user_recommendation }}
+  
+         <h3>{{ $user_recommendation }}</h3> 
+
     
     @endif
     
-    </h2>
+    
 
       </div>
+<<<<<<< HEAD
 <div id='app' style=>
 <script src="{{ mix('js/statistics.js') }}"></script>
 
@@ -45,7 +48,21 @@
  </div>
 <div id='app'>
 <script src="{{ mix('js/statistics.js') }}"></script>
+=======
+      
+<div class="user-chart-statistics"id='app'>
+<script src="{{ mix('js/statistics.js') }}"></script>
+
+</div>
+>>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 </section>
 
 
     @endsection
+<<<<<<< HEAD
+=======
+
+
+
+
+>>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f

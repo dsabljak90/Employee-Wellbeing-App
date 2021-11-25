@@ -62,7 +62,7 @@ public function index() {
         
        //The all questions mut be fulfill. It they are not, that data dont go in db.
        
-        return view('/recommendations/recommendations', compact('user_name', 'user_id','testing', 'user_recommendation')); 
+        return view('/recommendations/recommendations', compact('user_name', 'user_id','testing','user_recommendation')); 
 
     }
 }}

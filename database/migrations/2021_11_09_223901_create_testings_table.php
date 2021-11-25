@@ -17,6 +17,7 @@ class CreateTestingsTable extends Migration
             $table->id();
             $table->date('date_from');
             $table->date('date_until');
+            $table->boolean('opened')->default(false);            
             //$table->double('responses');  //  average response from all users in all questions
                                           // 3.67
             $table->timestamps();

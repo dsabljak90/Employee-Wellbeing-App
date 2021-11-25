@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
     "/js/main.js": "/js/main.js?id=267fb3a1665c9eda150f",
     "/js/statistics.js": "/js/statistics.js?id=84e41758ce2a5cdffc87",
     "/js/recommendations.js": "/js/recommendations.js?id=b1de34114218237cc3fc",
     "/css/app.css": "/css/app.css?id=7a552f11631d06c102c1"
+=======
+    "/js/main.js": "/js/main.js?id=26d26e3bb1eec3296173",
+    "/js/statistics.js": "/js/statistics.js?id=392f5ca6546d4a065344",
+    "/js/recommendations.js": "/js/recommendations.js?id=41ddcae53b0184e4ea60",
+    "/css/app.css": "/css/app.css?id=b995e44a39bfe06db4f7"
+>>>>>>> d1caa7aecbdb52ff8ef06cec25984e7eff65744f
 }

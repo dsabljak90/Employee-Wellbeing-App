@@ -1,8 +1,8 @@
 export default function AboutUs() {
     return (
         <>
-            <section id="about" className="about-us">
-                <h1>About Us</h1>
+            <div className="about-us">
+                <h1 className="aboutus-title">About Us</h1>
                 <div className="short-line"></div>
                 <div className="about-us-text">
                     <p>
@@ -41,7 +41,7 @@ export default function AboutUs() {
                         faucibus.
                     </p>
                 </div>
-            </section>
+            </div>
         </>
     );
 }

@@ -1,6 +1,3 @@
-<div>
-    <p> Hello from Recommendations Blade. </p>
-</div>
 @extends('layouts.user-main')
 
 @section('user-content')
@@ -10,18 +7,25 @@
 
     <div class="user-recommendations-container">
 
-    <div class="user-statatistics-user-info">
+            <div class="user-recommendations-user-info">
+        
+
+        <h2> User:{{ $user_name }}</h2>
+        <h2>Testing Round:{{ $testing }}</h2>
+        </div>
 
 
-<h2> User:{{ $user_name }}</h2>
-<h2>Testing Round:{{ $testing }}</h2>
-</div>
+        <div class="user-recommendations-recommendation">
+         <h3>Recommendation</h3> 
+         <h3>{{ $user_recommendation }}</h3> 
+
+        </div>
+        <div class="user-chart-recommendations"id='app'>
+<script src="{{ mix('js/recommendations.js') }}"></script>
 
 
-<div class="user-statistics-recommendation">
-<h2>Recommendation :{{ $user_recommendation }}</h2>
 
-</div>
+        </div>
 </div>
 
 

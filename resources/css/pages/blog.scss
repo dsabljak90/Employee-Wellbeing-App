@@ -1,7 +1,7 @@
 @import "../colors.scss";
 
 .blog {
-    width: 90%;
+    width: 100%;
     padding: 5rem;
 }
 
@@ -14,22 +14,34 @@
 }
 .blog-articles {
     grid-area: blog;
+    padding: 0.5rem;
 }
 .blog-articles-1 {
     grid-area: blog-1;
+    padding: 0.5rem;
 }
 .blog-articles-2 {
     grid-area: blog-2;
+    padding: 0.5rem;
 }
 .blog-articles-3 {
     grid-area: blog-3;
+    padding: 0.5rem;
 }
 
 .article {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+
+    .blog-link {
+        color: $font-color;
+        text-decoration: none;
+        :hover {
+            color: $dark-red;
+        }
+    }
 }
 .article img {
     margin-bottom: 2rem;
@@ -42,4 +54,39 @@
     height: 1px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .blog {
+        width: 100%;
+        padding: 5rem;
+        height: 50rem;
+    }
+    .blog-container {
+        margin-top: 5rem;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+            "blog blog-1"
+            "blog-2 blog-3";
+        height: 25rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .blog {
+        width: 100%;
+        height: 95rem;
+        padding: 1rem;
+    }
+    .blog-container {
+        display: grid;
+        grid-template-areas:
+            "blog"
+            "blog-1"
+            "blog-2"
+            "blog-3";
+        height: 100%;
+        width: 100%;
+    }
 }

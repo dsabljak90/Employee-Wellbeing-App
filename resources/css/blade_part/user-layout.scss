@@ -21,7 +21,8 @@
             height: 4vh;
 
             :hover {
-                background-color: $user-hover-color;
+                background-color: $dark-red;
+                color: $user-font-color;
             }
             button {
                 margin-top: 1rem;
@@ -57,7 +58,8 @@
                 justify-content: center;
 
                 :hover {
-                    background-color: $user-hover-color;
+                    background-color: $dark-red;
+                    color: $user-font-color;
                 }
                 li {
                     color: $user-font-color;
@@ -85,5 +87,103 @@
         flex-direction: column;
         text-align: center;
         margin: 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .user-background {
+        background-color: $user-area-background;
+        width: 100%;
+        height: 100%;
+        color: $user-font-color;
+        font-family: "Courier New", Courier, monospace;
+        .title-user-part {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 25vh;
+            padding: 1rem;
+            h1 {
+                padding-bottom: 2rem;
+            }
+            h3,
+            form {
+                justify-content: flex-end;
+                flex-direction: row;
+                margin-left: 0%;
+                height: 4vh;
+
+                :hover {
+                    background-color: $dark-red;
+                    color: $user-font-color;
+                }
+                button {
+                    margin-top: 1rem;
+                    margin-bottom: 1rem;
+                    border: none;
+                    width: 6rem;
+                    height: 3rem;
+                    background-color: $user-links-color;
+                    color: $user-links-font-color;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+        .user-nav-bar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+
+                a {
+                    text-decoration: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+
+                    :hover {
+                        background-color: $dark-red;
+                        color: $user-font-color;
+                        width: 100%;
+                    }
+                    li {
+                        color: $user-font-color;
+                        list-style: none;
+                        margin: 1rem;
+                        width: 10rem;
+                        padding: 1rem;
+                        background-color: $user-links-color;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 4rem;
+                        margin-bottom: 2rem;
+                        color: $user-links-font-color;
+                        font-size: 1.1rem;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        .user-footer {
+            background-color: $user-area-background;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 0;
+        }
     }
 }

@@ -2,9 +2,10 @@ export default function Advices() {
     return (
         <>
             <div className="long-line"></div>
+            <h1>General Advices</h1>
+            <div className="short-line"></div>
             <div className="advices">
                 <div className="advices-text-area">
-                    <h1>General Advices</h1>
                     <div className="advices-text-detiles">
                         <div className="advice-one">
                             <h3>Advice title</h3>

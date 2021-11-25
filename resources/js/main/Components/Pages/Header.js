@@ -7,38 +7,35 @@ export default function Header({ user }) {
                     <div className="network"></div>
                     <div className="small-title">
                         <h3>{/* <Link to="/info">{user}</Link>{" "} */}</h3>
-                        <h2>Small title above</h2>
+                        <h2></h2>
                         <div className="links">
-                            <a href="/test">
-                                <li>Link </li>
+                            <a href="/">
+                                <li>Home</li>
                             </a>
-                            <a href="#about-us">
+                            <a href="">
                                 <li>About Us</li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>General Advices </li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>Blog</li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>Test </li>
                             </a>
                             <a href="">
-                                <li>Link </li>
+                                <li>Contact </li>
                             </a>
                         </div>
                         <div className="short-line"></div>
                         <div className="big-title">
-                            <h1>Big Titile</h1>
+                            <h1>Manatu Wellbeing</h1>
                         </div>
                     </div>
 
                     <div className="header-login">
-                        <a href="">Login</a>
-                        <a href="/test"></a>
-                        <a href="/login">Login</a>
-                        <a href="/login">
+                        <a href="/test">
                             <div className="test-button">Test/Results</div>
                         </a>
                     </div>
