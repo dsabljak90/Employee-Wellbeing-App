@@ -2141,21 +2141,20 @@ function App() {
 
   var getAnswers = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
-      var userId, resp;
+      var resp;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              userId = document.querySelector("input").value;
-              _context.next = 3;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/answers?user_id=" + userId);
+              _context.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("/api/answers");
 
-            case 3:
+            case 2:
               resp = _context.sent;
               console.log(resp.data);
               setAnswers(resp.data);
 
-            case 6:
+            case 5:
             case "end":
               return _context.stop();
           }
@@ -2222,7 +2221,7 @@ function App() {
         }
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(recharts__WEBPACK_IMPORTED_MODULE_10__.Tooltip, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(recharts__WEBPACK_IMPORTED_MODULE_11__.Legend, {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_4__.jsx)(recharts__WEBPACK_IMPORTED_MODULE_12__.Bar, {
         dataKey: "pv",
-        fill: "#8884d8"
+        fill: "#8884D8"
       })]
     })
   });

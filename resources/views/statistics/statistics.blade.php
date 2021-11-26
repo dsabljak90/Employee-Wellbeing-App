@@ -22,6 +22,9 @@
       </div>
 <div class="user-chart-statistics"id='app'>
 <script src="{{ mix('js/statistics.js') }}"></script>
+@if(\Gate::allows('manager'))
+<a href="{{ route('managers_statistics') }}">See Manager's Statistics</a>
+@endif
 </div>
 </section>
     @endsection

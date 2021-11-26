@@ -41,7 +41,7 @@ Route::get('/send-enrollment', [EnrollmentController::class, 'sendEnrollmentNoti
 Route::get('/managers_statistics', 'ManagersStatisticsController@reactApp')
     ->where('param', '.*')
     ->middleware(['can:manager'])
-    ->name('statistics');
+    ->name('managers_statistics');
     
 
 //enrollment notifications to all users
@@ -50,7 +50,7 @@ Route::get('/send-enrollment-all', [EnrollmentController::class, 'sendEnrollment
 
 Route::post('/test/{id}', 'TestController@store');
 Route::get('/test/{id}', 'TestController@index');
-//Route::post('/test/{id}', 'TestController@store');
+//gRoute::post('/test/{id}', 'TestController@store');
 
 Route::post('/test/{id}/assign', 'TestController@assignTest');
 Route::post('/statistics/{param?}', 'StatisticsController@reactApp')->where('param', '.*')->name('statistics');

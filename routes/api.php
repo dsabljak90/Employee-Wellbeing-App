@@ -21,5 +21,5 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/answers', 'Api\StatisticsController@show');
-// Route::get('/managersanswers', 'Api\ManagersStatisticsController@show');//->middleware(['can:manager']);
+Route::get('/managersanswers', 'Api\ManagersStatisticsController@show')->middleware(['can:manager']);
    

@@ -2141,22 +2141,20 @@ function App() {
 
   var getAnswers = /*#__PURE__*/function () {
     var _ref = _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().mark(function _callee() {
-      var userId, userRole, resp;
+      var resp;
       return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default().wrap(function _callee$(_context) {
         while (1) {
           switch (_context.prev = _context.next) {
             case 0:
-              userId = document.querySelector("#user_id").value;
-              userRole = document.querySelector("#user_role").value;
-              _context.next = 4;
-              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("api/managersanswers?user_id=" + userId + "&user_role=" + userRole);
+              _context.next = 2;
+              return axios__WEBPACK_IMPORTED_MODULE_2___default().get("api/managersanswers");
 
-            case 4:
+            case 2:
               resp = _context.sent;
               console.log(resp.data);
               setAnswers(resp.data);
 
-            case 7:
+            case 5:
             case "end":
               return _context.stop();
           }
@@ -2200,7 +2198,7 @@ function App() {
       height: 300,
       data: answers.map(function (answer, i) {
         return {
-          name: "Question " + answer.question_id,
+          name: answer.question_id,
           pv: answer.answer
         };
       }),

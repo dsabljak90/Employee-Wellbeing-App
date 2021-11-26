@@ -18,11 +18,7 @@ import {
 export default function App() {
     const [answers, setAnswers] = useState([]);
     const getAnswers = async () => {
-        const userId = document.querySelector("#user_id").value;
-        const userRole = document.querySelector("#user_role").value;
-        const resp = await axios.get(
-            "api/managersanswers?user_id=" + userId + "&user_role=" + userRole
-        );
+        const resp = await axios.get("api/managersanswers");
 
         console.log(resp.data);
         setAnswers(resp.data);
@@ -72,7 +68,7 @@ export default function App() {
                 height={300}
                 data={answers.map((answer, i) => {
                     return {
-                        name: "Question " + answer.question_id,
+                        name: answer.question_id,
                         pv: answer.answer,
                     };
                 })}

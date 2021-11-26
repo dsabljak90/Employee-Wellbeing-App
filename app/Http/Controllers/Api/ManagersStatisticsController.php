@@ -12,17 +12,17 @@ class ManagersStatisticsController extends Controller
 {
      public function show(Request $request)
     {
-        // $user = Auth::user();
-        $user_id = $request->get('user_id');
+        $user = Auth::user();
+        
         // $testing = Testing::findOrfail($testing_id);
-        $user_role = $request->get('user_role');
-        // $manager_id = $user->manager_id;
+        $manager_id = $user->manager_id;
         // dd($manager_id);
-
-        $response = $user_id;
-        return $response;
-        $response = Response::where('$manager_id', $manager_id);
+        $responses = Response::query()
+            ->select('responses.*')
+            ->join('users', 'responses.user_id', 'users.id')
+            ->where('users.manager_id', $manager_id)
+            ->get();
 //
-        return ($response);
+        return $responses;
     }
 }

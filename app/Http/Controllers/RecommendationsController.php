@@ -27,7 +27,7 @@ public function index() {
         $user = Auth::user()->id; // This reds user id from Responses table. User is posible ti auticatre with Auth::user()
        
     
-        $testing = request('testing');
+        $testing = Response::max('testing_id');
         
         //Testing::  where('id', 'like', '%' . $searchString . '%')->get();
         //Testing::findOrFail($id)->id; // This reeds testing_id from Responses table.
@@ -42,7 +42,7 @@ public function index() {
         
         };
        
-        $score = 1.4; // This I was hardcoded, this should go automaticly, based on taken tent. 
+        $score = $sum/7; // This I was hardcoded, this should go automaticly, based on taken tent. 
         $recommendation = EmployeeRecommendation::all();
    
 

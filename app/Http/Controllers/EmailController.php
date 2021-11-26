@@ -25,8 +25,8 @@ class EmailController extends Controller
         foreach($user_email as $em){
 
             $email = new \SendGrid\Mail\Mail(); 
-            $email->setTemplateId("d-7112ff9ed94748fb8d7e8743c495510c");//SendGrid email template ID
-            $email->setFrom("radcer2@seznam.cz", "Manatu Wellbeing App"); //from - to be connected with user database
+            $email->setTemplateId("d-5f5dad470eed413eba95a3af6f350f1a");//SendGrid email template ID
+            $email->setFrom("cerny.rada@gmail.com", "Manatu Wellbeing App"); //from - to be connected with user database
             $email->setSubject("testing email from wellbeing app"); //subject
                 /* dd($em->email); */
             $email->addTo($em->email, "Wellbeing User"); //to

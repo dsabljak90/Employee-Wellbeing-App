@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { get } from "../../../util/request";
-
 import {
     BarChart,
     Bar,
@@ -14,13 +13,10 @@ import {
     Legend,
     ResponsiveContainer,
 } from "recharts";
-
 export default function App() {
     const [answers, setAnswers] = useState([]);
     const getAnswers = async () => {
-        const userId = document.querySelector("input").value;
-        const resp = await axios.get("/api/answers?user_id=" + userId);
-
+        const resp = await axios.get("/api/answers");
         console.log(resp.data);
         setAnswers(resp.data);
     };
@@ -28,40 +24,32 @@ export default function App() {
     useEffect(() => {
         getAnswers();
     }, []);
-
     const data = [
         {
             name: "Question 1",
-
             answer: answers.answer,
         },
         {
             name: "Question 2",
-
             pv: 8,
         },
         {
             name: "Question 3",
-
             pv: 2,
         },
         {
             name: "Question 4",
-
             pv: 1,
         },
         {
             name: "Question 5",
-
             pv: 6,
         },
         {
             name: "Question 6",
-
             pv: 5,
         },
     ];
-
     return (
         <ResponsiveContainer width="100%" aspect={3}>
             <BarChart
@@ -85,7 +73,7 @@ export default function App() {
                 <YAxis tick={{ stroke: "blue" }} />
                 <Tooltip />
                 <Legend />
-                <Bar dataKey="pv" fill="#8884d8" />
+                <Bar dataKey="pv" fill="#8884D8" />
             </BarChart>
         </ResponsiveContainer>
     );
