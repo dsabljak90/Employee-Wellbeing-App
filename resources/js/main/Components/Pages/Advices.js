@@ -4,7 +4,7 @@ export default function Advices() {
             <div className="long-line"></div>
             <h1>General Advices</h1>
             <div className="short-line"></div>
-            <div className="advices">
+            <div className="advices" id="advices">
                 <div className="advices-text-area">
                     <div className="advices-text-detiles">
                         <div className="advice-one">

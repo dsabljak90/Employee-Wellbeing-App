@@ -1,16 +1,14 @@
 export default function Test() {
     return (
         <>
-            <div className="test">
+            <div className="test" id="test">
                 <div className="test-text">
                     <h1>Test</h1>
                     <div className="short-line"></div>
                     <p>
-                        Sed ut perspiciatis unde omnis iste natus error sit
-                        voluptatem accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et
-                        quasi architecto beatae vitae dicta sunt explicabo.
-                        Mauris dictum facilisis augue. Nulla quis diam.
+                        Your wellbeing matters to us! Take a few minutes to
+                        answer seven simple questions. Just click on the button
+                        right and here you go!
                     </p>
 
                     <h3>To take test you have login or register.</h3>
@@ -19,7 +17,7 @@ export default function Test() {
                     </a>
                 </div>
                 <div className="test-buttons">
-                    <a href="/test">
+                    <a href="/test/2">
                         <div className="reg-button reg-button_test">Test </div>
                     </a>
                     <a href="/statistics">

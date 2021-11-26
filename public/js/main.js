@@ -127,6 +127,7 @@ function Advices() {
       className: "short-line"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "advices",
+      id: "advices",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
         className: "advices-text-area",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
@@ -186,6 +187,7 @@ function Blog() {
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
       className: "short-line"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
+      id: "blog",
       className: "blog",
       children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "blog-container",
@@ -194,10 +196,10 @@ function Blog() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "article",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-              src: "/img/advice.jpg"
+              src: "/img/blog1.jpg"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-              className: "https://hbr.org/2021/10/7-strategies-to-improve-your-employees-health-and-well-being",
-              href: "",
+              className: "blog-link",
+              href: "https://hbr.org/2021/10/7-strategies-to-improve-your-employees-health-and-well-being",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
                 children: "7 Strategies to Improve Your Employees\u2019 Health and Well-Being"
               })
@@ -208,12 +210,12 @@ function Blog() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "article",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-              src: "/img/advice.jpg"
+              src: "/img/blog2.jpg"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
               className: "blog-link",
-              href: "",
+              href: "https://www.raconteur.net/the-hive/hr-remote-workforce-wellbeing/",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
-                children: "Name of Article"
+                children: "Ensuring the wellbeing of your remote workforce"
               })
             })]
           })
@@ -222,12 +224,12 @@ function Blog() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "article",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-              src: "/img/advice.jpg"
+              src: "/img/blog3.jpg"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
               className: "blog-link",
-              href: "",
+              href: "https://www.theatlantic.com/science/archive/2016/12/the-best-music-for-productivity-silence/509948/",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
-                children: "Name of Article"
+                children: "The Best Music for Productivity? Silence"
               })
             })]
           })
@@ -236,12 +238,12 @@ function Blog() {
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "article",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("img", {
-              src: "/img/advice.jpg"
+              src: "/img/blog4.jpg"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
               className: "blog-link",
-              href: "",
+              href: "https://medium.com/@drsimonj/thinking-decisions-and-data-chapter-3-the-lazy-controller-2dd363d33d5a",
               children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
-                children: "Name of Article"
+                children: "Thinking, Decisions and Data: Chapter 3 \u2014 The Lazy Controller"
               })
             })]
           })
@@ -272,6 +274,7 @@ __webpack_require__.r(__webpack_exports__);
 function Footer() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("footer", {
+      id: "contact",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
         className: "original",
         children: "Copyright \xA9 2021. Manatu Wellbeing App. All Rights Reserved"
@@ -310,6 +313,17 @@ __webpack_require__.r(__webpack_exports__);
 
 function Header(_ref) {
   var user = _ref.user;
+
+  var handleItemClick = function handleItemClick(event) {
+    event.preventDefault();
+    var target = event.target.getAttribute("href");
+    console.log(target);
+    var element = document.getElementById(target);
+    element.scrollIntoView({
+      behavior: "smooth"
+    });
+  };
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("header", {
       className: "header",
@@ -325,35 +339,29 @@ function Header(_ref) {
           children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h2", {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
             className: "links",
             children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
+              onClick: handleItemClick,
               href: "/",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: "Home"
-              })
+              children: "Home"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-              href: "",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: "About Us"
-              })
+              onClick: handleItemClick,
+              href: "aboutUs",
+              children: "About Us"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-              href: "",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: "General Advices "
-              })
+              onClick: handleItemClick,
+              href: "advices",
+              children: "General Advices"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-              href: "",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: "Blog"
-              })
+              onClick: handleItemClick,
+              href: "blog",
+              children: "Blog"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-              href: "",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: "Test "
-              })
+              onClick: handleItemClick,
+              href: "test",
+              children: "Test"
             }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-              href: "",
-              children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("li", {
-                children: "Contact "
-              })
+              onClick: handleItemClick,
+              href: "contact",
+              children: "Contact"
             })]
           }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
             className: "short-line"
@@ -403,6 +411,7 @@ function Test() {
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.Fragment, {
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
       className: "test",
+      id: "test",
       children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "test-text",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h1", {
@@ -410,7 +419,7 @@ function Test() {
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
           className: "short-line"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("p", {
-          children: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Mauris dictum facilisis augue. Nulla quis diam."
+          children: "Your wellbeing matters to us! Take a few minutes to answer seven simple questions. Just click on the button right and here you go!"
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("h3", {
           children: "To take test you have login or register."
         }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
@@ -423,7 +432,7 @@ function Test() {
       }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxs)("div", {
         className: "test-buttons",
         children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("a", {
-          href: "/test",
+          href: "/test/2",
           children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx)("div", {
             className: "reg-button reg-button_test",
             children: "Test "

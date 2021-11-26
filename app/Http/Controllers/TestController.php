@@ -25,7 +25,7 @@ class TestController extends Controller
             $user_name = Auth::user()->fullname;
             $user_id = Auth::user()->id;
 
-            $questions = Question::all();
+            $questions = Question::all()->all();
 
             $responses = Response::where('user_id', Auth::user()->id)->where('testing_id', $testing->id)->get();
         
@@ -35,10 +35,10 @@ class TestController extends Controller
     
 }
     public function store(Request $request, $testing_id) {
-        $questionCount = Question::count();
+        // $questionCount = Question::count();
 
         $this->validate($request, [
-            'answers' => 'required|array|size:' . $questionCount
+            'answers' => 'required|array|size:' . 7
         ]);
         // do this as many times as you have questions
         // common for all questions/responses in one submit 
@@ -61,21 +61,7 @@ class TestController extends Controller
  
         
 
- public function update(Request $request) {
-    foreach ($request->input('answers') as $question_id => $answer){
-        $response = new Response();
-        $response->test_id = 3;
-        $response->user_id = "??";
-        
-        // specific for each question/answer
-        $response->question_id = $question_id;
-        $response->answer = $answer;
-        // $response->save()
-        
-        dd($request->input('answers'));
-return $request->all();
-        }
-}
+ 
     public function assignTest($testing_id) {
         $testing = Testing::findOrFail($testing_id);
 

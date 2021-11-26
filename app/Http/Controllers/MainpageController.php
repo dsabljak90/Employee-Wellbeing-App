@@ -36,5 +36,5 @@ class MainpageController extends Controller
     }
     return view('layouts/user-main');
     }
-
+ 
 }

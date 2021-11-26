@@ -1,7 +1,7 @@
 export default function AboutUs() {
     return (
         <>
-            <div className="about-us">
+            <div id="aboutUs" className="about-us">
                 <h1 className="aboutus-title">About Us</h1>
                 <div className="short-line"></div>
                 <div className="about-us-text">

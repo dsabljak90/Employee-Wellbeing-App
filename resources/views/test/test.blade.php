@@ -1,15 +1,15 @@
-<section class="user-test">
+{{-- <section class="user-test">
         <div class="user-test-info">
                 <h2> Test </h2>
 
                 {{-- <p>We have to make here decision about testing witch is happening and how to always submit all 7 answers</p> --}}
 
-                </div>
+                {{-- </div>
         <div class="user-test-form">
 
                 <form action="/test/{{ $testing->id }}" method="POST">
                 @csrf
-                @foreach($questions as $key =>$question) 
+                @foreach(array_slice($questions,0,6) as $key =>$question) 
                     
             <p> {{$question->text}} </p>
             <div class=user-questions>
@@ -49,7 +49,7 @@
 
         </form>
             </div>
-    </section>
+    </section> --}}
 
 <!--  This abouve is just for showing.-->
  @extends('layouts.user-main')
@@ -92,7 +92,7 @@
 
                 <form action="/test/{{ $testing->id }}" method="POST">
                 @csrf
-                @foreach($questions as $key =>$question) 
+                @foreach(array_slice($questions,0,7) as $key =>$question) 
                     
             <p> {{$question->text}} </p>
             <div class=user-questions>

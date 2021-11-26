@@ -1,5 +1,14 @@
 import { Link } from "react-router-dom";
 export default function Header({ user }) {
+    const handleItemClick = (event) => {
+        event.preventDefault();
+        const target = event.target.getAttribute("href");
+        console.log(target);
+        const element = document.getElementById(target);
+        element.scrollIntoView({
+            behavior: "smooth",
+        });
+    };
     return (
         <>
             <header className="header">
@@ -11,23 +20,23 @@ export default function Header({ user }) {
                         <h3>{/* <Link to="/info">{user}</Link>{" "} */}</h3>
                         <h2></h2>
                         <div className="links">
-                            <a href="/">
-                                <li>Home</li>
+                            <a onClick={handleItemClick} href="/">
+                                Home
                             </a>
-                            <a href="">
-                                <li>About Us</li>
+                            <a onClick={handleItemClick} href="aboutUs">
+                                About Us
                             </a>
-                            <a href="">
-                                <li>General Advices </li>
+                            <a onClick={handleItemClick} href="advices">
+                                General Advices
                             </a>
-                            <a href="">
-                                <li>Blog</li>
+                            <a onClick={handleItemClick} href="blog">
+                                Blog
                             </a>
-                            <a href="">
-                                <li>Test </li>
+                            <a onClick={handleItemClick} href="test">
+                                Test
                             </a>
-                            <a href="">
-                                <li>Contact </li>
+                            <a onClick={handleItemClick} href="contact">
+                                Contact
                             </a>
                         </div>
                         <div className="short-line"></div>
@@ -35,7 +44,6 @@ export default function Header({ user }) {
                             <h1>Manatu Wellbeing</h1>
                         </div>
                     </div>
-
                     <div className="header-login">
                         <a href="/login">
                             <div className="test-button">Login/Register</div>

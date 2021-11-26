@@ -35,14 +35,14 @@
             </div>
             <div class="user-nav-bar">
                 <ul>
-                <a href="/test">
+                <a href="/test/2">
                     <li>Test</li>
                 </a>
                 <a href="/recommendations">
                     <li>Recommendation</li>
                 </a>
                 <a href="/statistics/statistics">
-                    <li>Statistic</li>
+                    <li>Statistics</li>
                 </a>
                 
                
