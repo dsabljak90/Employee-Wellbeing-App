@@ -9,7 +9,6 @@ class EmailController extends Controller
 {
   public function send()
   {
-            dump("sent");
        // If you're using Composer (recommended)
         // Comment out the above line if not using Composer
         // require("<PATH TO>/sendgrid-php.php");
@@ -41,7 +40,10 @@ class EmailController extends Controller
                 print $response->statusCode() . "\n";
                 print_r($response->headers());
                 print $response->body() . "\n";
+            dump("sent");
+
             } catch (Exception $e) {
+                print_r("sent success");
                 echo 'Caught exception: '. $e->getMessage() ."\n";
             }
         }
