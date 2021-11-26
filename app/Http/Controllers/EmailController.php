@@ -40,7 +40,7 @@ class EmailController extends Controller
                 print $response->statusCode() . "\n";
                 print_r($response->headers());
                 print $response->body() . "\n";
-            dump("sent");
+            
 
             } catch (Exception $e) {
                 print_r("sent success");

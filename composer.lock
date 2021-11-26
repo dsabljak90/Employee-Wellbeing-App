@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
     "content-hash": "8758ad8cc33a4d16e7465d6524b8ef5d",
-=======
-    "content-hash": "77235c4314ce72ea937b462234b0f62d",
->>>>>>> notifications
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1584,16 +1580,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.1.6",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "627be7fcde84c71aa0f15097fcf48fd5f2be5287"
+                "reference": "3ca8f158ee21efa4bbd4f74bea5730c9b9261e2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/627be7fcde84c71aa0f15097fcf48fd5f2be5287",
-                "reference": "627be7fcde84c71aa0f15097fcf48fd5f2be5287",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/3ca8f158ee21efa4bbd4f74bea5730c9b9261e2d",
+                "reference": "3ca8f158ee21efa4bbd4f74bea5730c9b9261e2d",
                 "shasum": ""
             },
             "require": {
@@ -1664,7 +1660,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/1.1.6"
+                "source": "https://github.com/thephpleague/flysystem/tree/1.1.7"
             },
             "funding": [
                 {
@@ -1672,7 +1668,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2021-11-21T11:04:36+00:00"
+            "time": "2021-11-25T19:40:58+00:00"
         },
         {
             "name": "league/mime-type-detection",
@@ -5760,18 +5756,6 @@
         },
         {
             "name": "facade/ignition",
-<<<<<<< HEAD
-            "version": "2.17.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/facade/ignition.git",
-                "reference": "28d12b473ffcbe326959385772fd5125c73bc974"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/facade/ignition/zipball/28d12b473ffcbe326959385772fd5125c73bc974",
-                "reference": "28d12b473ffcbe326959385772fd5125c73bc974",
-=======
             "version": "2.17.1",
             "source": {
                 "type": "git",
@@ -5782,7 +5766,6 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/facade/ignition/zipball/317f6110c1977b50e06365bbb155fbe5079035ec",
                 "reference": "317f6110c1977b50e06365bbb155fbe5079035ec",
->>>>>>> notifications
                 "shasum": ""
             },
             "require": {
@@ -5836,11 +5819,7 @@
                 "issues": "https://github.com/facade/ignition/issues",
                 "source": "https://github.com/facade/ignition"
             },
-<<<<<<< HEAD
-            "time": "2021-11-24T08:47:21+00:00"
-=======
             "time": "2021-11-25T10:26:30+00:00"
->>>>>>> notifications
         },
         {
             "name": "facade/ignition-contracts",
