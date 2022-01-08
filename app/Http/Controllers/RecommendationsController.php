@@ -24,16 +24,12 @@ public function index() {
             $user_name = Auth::user()->fullname;
             $user_id = Auth::user()->id;
    
-        $user = Auth::user()->id; // This reds user id from Responses table. User is posible ti auticatre with Auth::user()
-       
-    
+        $user = Auth::user()->id; // This reds user id from Responses table. User is possible ti authenticate with Auth::user()
         $testing = Response::max('testing_id');
         
         //Testing::  where('id', 'like', '%' . $searchString . '%')->get();
         //Testing::findOrFail($id)->id; // This reeds testing_id from Responses table.
         $response= Response::all();
-        //Manegent to select particular user witg {$id}. see how to get an imput for that with foorm.
-        
         $sum =0;
    {
         foreach( $response as $response){
@@ -42,7 +38,7 @@ public function index() {
         
         };
        
-        $score = $sum/7; // This I was hardcoded, this should go automaticly, based on taken tent. 
+        $score = $sum/7; 
         $recommendation = EmployeeRecommendation::all();
    
 
@@ -60,7 +56,7 @@ public function index() {
         }
      
         
-       //The all questions mut be fulfill. It they are not, that data dont go in db.
+       //The all questions mut be fulfill. It they are not, db will not receive the data.
        
         return view('/recommendations/recommendations', compact('user_name', 'user_id','testing','user_recommendation')); 
 

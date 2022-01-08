@@ -9,36 +9,33 @@ footer {
     align-items: center;
     justify-content: space-around;
     background-color: $font-color;
-}
-.contact {
-    margin-right: 5rem;
-    color: $background-color;
-}
-.original {
-    margin-right: 5rem;
-    color: $background-color;
+    p {
+        margin-right: 5rem;
+        color: $background-color;
+    }
+    .contact {
+        margin-right: 5rem;
+        color: $background-color;
+    }
 }
 
 @media (max-width: 500px) {
     footer {
-        margin-top: 10rem;
-        width: 100%;
-        height: 20rem;
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        background-color: $font-color;
         text-align: center;
-    }
-    .contact {
-        color: $background-color;
-        width: 80%;
-        margin: 0;
-    }
-    .original {
-        color: $background-color;
-        width: 80%;
-        margin: 0;
+        p {
+            width: 80%;
+            text-align: center;
+            margin: 0;
+        }
+        .contact {
+            width: 80%;
+            margin: 0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
     }
 }

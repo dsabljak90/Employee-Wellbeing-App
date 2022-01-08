@@ -12,12 +12,12 @@ class StatisticsController extends Controller
         if (Auth::user()) {
             $user_name = Auth::user()->fullname;
             $user_id = Auth::user()->id;
-            $user = Auth::user()->id; // This reds user id from Responses table. User is posible ti auticatre with Auth::user()
+            $user = Auth::user()->id; // This reds user id from Responses table.
             $testing = request('testing');
             //Testing::  where('id', 'like', '%' . $searchString . '%')->get();
             //Testing::findOrFail($id)->id; // This reeds testing_id from Responses table.
             $response= Response::all();
-            //Manegent to select particular user witg {$id}. see how to get an imput for that with foorm.
+            
             $sum =0;
     
             foreach ($response as $response)
@@ -38,10 +38,10 @@ class StatisticsController extends Controller
                 return view('/statistics/statistics', compact('user_name', 'user_id','testing', 'user_recommendation' ));
             }
 
-            //The all questions mut be fulfill. It they are not, that data dont go in db.
+           
             return view('/statistics/statistics', compact('user_name', 'user_id','testing' ));
         }
-        return 'hey';
+        return 'Please login to see the statistics';
     }
 
     public function answers(Request $request)

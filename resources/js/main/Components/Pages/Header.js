@@ -51,9 +51,8 @@ export default function Header({ user }) {
                     </div>
                 </div>
             </header>
-            <div className="big-picture">
-                <img src="/img/background-two.jpg" />
-            </div>
+
+            <img className="big-picture" src="/img/background-two.jpg" />
         </>
     );
 }

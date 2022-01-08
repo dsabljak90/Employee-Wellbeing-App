@@ -3,15 +3,65 @@
 .blog {
     width: 100%;
     padding: 5rem;
+    .blog-container {
+        margin-top: 5rem;
+        width: 100%;
+        display: grid;
+        grid-template-areas: "blog blog-1 blog-2 blog-3";
+        height: 25rem;
+
+        .article {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                margin-bottom: 2rem;
+                width: 15rem;
+                height: 15rem;
+            }
+            a {
+                color: $font-color;
+                text-decoration: none;
+                &:hover {
+                    color: $dark-red;
+                }
+                h3 {
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
 
-.blog-container {
-    margin-top: 5rem;
-    width: 100%;
-    display: grid;
-    grid-template-areas: "blog blog-1 blog-2 blog-3";
-    height: 25rem;
+@media (max-width: 1200px) {
+    .blog {
+        height: 60rem;
+
+        .blog-container {
+            grid-template-areas:
+                "blog blog-1"
+                "blog-2 blog-3";
+        }
+    }
 }
+
+@media (max-width: 500px) {
+    .blog {
+        height: 97rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        .blog-container {
+            grid-template-areas:
+                "blog"
+                "blog-1"
+                "blog-2"
+                "blog-3";
+            height: 100%;
+        }
+    }
+}
+
 .blog-articles {
     grid-area: blog;
     padding: 0.5rem;
@@ -27,66 +77,4 @@
 .blog-articles-3 {
     grid-area: blog-3;
     padding: 0.5rem;
-}
-
-.article {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .blog-link {
-        color: $font-color;
-        text-decoration: none;
-        :hover {
-            color: $dark-red;
-        }
-    }
-}
-.article img {
-    margin-bottom: 2rem;
-    width: 15rem;
-    height: 15rem;
-}
-.long-line {
-    width: 90%;
-    background-color: $font-color;
-    height: 1px;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-@media (max-width: 1200px) {
-    .blog {
-        width: 100%;
-        padding: 5rem;
-        height: 50rem;
-    }
-    .blog-container {
-        margin-top: 5rem;
-        width: 100%;
-        display: grid;
-        grid-template-areas:
-            "blog blog-1"
-            "blog-2 blog-3";
-        height: 25rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .blog {
-        width: 100%;
-        height: 95rem;
-        padding: 1rem;
-    }
-    .blog-container {
-        display: grid;
-        grid-template-areas:
-            "blog"
-            "blog-1"
-            "blog-2"
-            "blog-3";
-        height: 100%;
-        width: 100%;
-    }
 }

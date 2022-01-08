@@ -2,7 +2,7 @@ export default function Footer() {
     return (
         <>
             <footer id="contact">
-                <p className="original">
+                <p>
                     Copyright &copy; 2021. Manatu Wellbeing App. All Rights
                     Reserved
                 </p>

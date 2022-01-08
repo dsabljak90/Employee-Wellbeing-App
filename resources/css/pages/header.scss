@@ -5,159 +5,159 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-}
-
-.header-firstpart {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-}
-.network {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 25%;
-}
-.small-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 20rem;
-    width: 50%;
-}
-.links {
-    list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.links > a {
-    color: $font-color;
-    text-decoration: none;
-    padding: 1rem 3rem 1rem 1rem;
-    font-size: 1.5em;
-    text-align: center;
-    :hover {
-        color: $dark-red;
-    }
-}
-.big-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    height: 10rem;
-}
-.header-login {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-    width: 15%;
-}
-.header-login > a {
-    color: $font-color;
-    text-decoration: none;
-}
-
-.test-button {
-    width: 8rem;
-    height: 3.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    background-color: $font-color;
-    color: $background-color;
-}
-.test-button:hover {
-    opacity: 0.5;
-    background-color: $dark-red;
-    color: $font-color;
-}
-.big-picture {
-    width: 100%;
-}
-.big-picture > img {
-    height: 35rem;
-    width: 100%;
-}
-
-.short-line {
-    width: 100%;
-    background-color: $font-color;
-    height: 1px;
-    margin-top: 1.5rem;
-}
-
-.network > img {
-    width: 15rem;
-    height: 15rem;
-}
-
-@media (max-width: 1030px) {
-    .big-picture > img {
-        height: 35rem;
-        width: 100%;
-    }
-}
-
-@media (max-width: 500px) {
-    .network {
-        display: none;
-    }
     .header-firstpart {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: row;
         align-items: center;
-        justify-content: center;
-        height: 40rem;
+        height: 100%;
         width: 100%;
-        text-align: center;
-    }
-    .links {
-        list-style: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-        padding: 0;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 2rem;
-    }
-    .header-login {
-        display: none;
-    }
-
-    .links > a {
-        color: $user-font-color-dark;
-        text-decoration: none;
-        background-color: $font-color;
-        font-size: 1.5em;
-        text-align: center;
-        width: 100%;
-        margin-bottom: 1rem;
-
-        :hover {
-            color: $dark-red;
+        .network {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 25%;
+            img {
+                width: 15rem;
+                height: 15rem;
+            }
+        }
+        .small-title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 20rem;
+            width: 50%;
+            .links {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                a {
+                    color: $font-color;
+                    text-decoration: none;
+                    padding: 1rem 3rem 1rem 1rem;
+                    font-size: 1.5em;
+                    text-align: center;
+                    &:hover {
+                        color: $dark-red;
+                    }
+                }
+            }
+            .short-line {
+                width: 100%;
+                background-color: $font-color;
+                height: 1px;
+                margin-top: 1.5rem;
+            }
+            .big-title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-decoration: none;
+                height: 10rem;
+            }
+        }
+        .header-login {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            width: 15%;
+            a {
+                color: $font-color;
+                text-decoration: none;
+                .test-button {
+                    width: 8rem;
+                    height: 3.5rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    text-decoration: none;
+                    background-color: $font-color;
+                    color: $background-color;
+                    &:hover {
+                        opacity: 0.5;
+                        background-color: $dark-red;
+                        color: $font-color;
+                    }
+                }
+            }
         }
     }
-    .small-title {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: 20rem;
+}
+
+.big-picture {
+    width: 100%;
+    height: 35rem;
+    img {
+        height: 100%;
         width: 100%;
+    }
+}
+
+/* .network > 
+ */
+@media (max-width: 1030px) {
+    .header {
+        .header-firstpart {
+            .network {
+                display: none;
+            }
+            .small-title {
+                width: 100%;
+            }
+            .header-login {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 811px) {
+    .header {
+        .header-firstpart {
+            flex-direction: column-reverse;
+
+            justify-content: center;
+            height: 40rem;
+
+            text-align: center;
+            .network {
+                display: none;
+            }
+            .small-title {
+                height: 20rem;
+                width: 100%;
+                .links {
+                    list-style: none;
+
+                    padding: 0;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 2rem;
+                    a {
+                        color: $user-font-color-dark;
+                        text-decoration: none;
+                        background-color: $font-color;
+                        font-size: 1.5em;
+                        text-align: center;
+                        width: 100%;
+                        margin-bottom: 1rem;
+                        &:hover {
+                            color: $dark-red;
+                        }
+                    }
+                }
+            }
+            .header-login {
+                display: none;
+            }
+        }
     }
 }
